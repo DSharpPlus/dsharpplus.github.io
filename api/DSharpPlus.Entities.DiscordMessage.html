@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordMessage
    ">
-    <meta name="generator" content="docfx 2.57.0.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -160,6 +160,32 @@
   </table>
   
   
+  <a id="DSharpPlus_Entities_DiscordMessage_ApplicationId_" data-uid="DSharpPlus.Entities.DiscordMessage.ApplicationId*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMessage_ApplicationId" data-uid="DSharpPlus.Entities.DiscordMessage.ApplicationId">ApplicationId</h4>
+  <div class="markdown level1 summary"><p>Gets the id of the interaction application, if a response to an interaction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong? ApplicationId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Entities_DiscordMessage_Attachments_" data-uid="DSharpPlus.Entities.DiscordMessage.Attachments*"></a>
   <h4 id="DSharpPlus_Entities_DiscordMessage_Attachments" data-uid="DSharpPlus.Entities.DiscordMessage.Attachments">Attachments</h4>
   <div class="markdown level1 summary"><p>Gets files attached to this message.</p>
@@ -258,6 +284,32 @@
     <tbody>
       <tr>
         <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordMessage_Components_" data-uid="DSharpPlus.Entities.DiscordMessage.Components*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMessage_Components" data-uid="DSharpPlus.Entities.DiscordMessage.Components">Components</h4>
+  <div class="markdown level1 summary"><p>Gets the components this message was sent with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;DiscordActionRowComponent&gt; Components { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordActionRowComponent.html">DiscordActionRowComponent</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1472,13 +1524,13 @@
   
   
   <a id="DSharpPlus_Entities_DiscordMessage_ModifyAsync_" data-uid="DSharpPlus.Entities.DiscordMessage.ModifyAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordMessage_ModifyAsync_Action_DSharpPlus_Entities_DiscordMessageBuilder__" data-uid="DSharpPlus.Entities.DiscordMessage.ModifyAsync(Action{DSharpPlus.Entities.DiscordMessageBuilder})">ModifyAsync(Action&lt;DiscordMessageBuilder&gt;)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordMessage_ModifyAsync_Action_DSharpPlus_Entities_DiscordMessageBuilder__System_Boolean_IEnumerable_DSharpPlus_Entities_DiscordAttachment__" data-uid="DSharpPlus.Entities.DiscordMessage.ModifyAsync(Action{DSharpPlus.Entities.DiscordMessageBuilder},System.Boolean,IEnumerable{DSharpPlus.Entities.DiscordAttachment})">ModifyAsync(Action&lt;DiscordMessageBuilder&gt;, Boolean, IEnumerable&lt;DiscordAttachment&gt;)</h4>
   <div class="markdown level1 summary"><p>Edits the message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; ModifyAsync(Action&lt;DiscordMessageBuilder&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordMessage&gt; ModifyAsync(Action&lt;DiscordMessageBuilder&gt; action, bool suppressEmbeds = false, IEnumerable&lt;DiscordAttachment&gt; attachments = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1494,6 +1546,18 @@
         <td><span class="xref">Action</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a>&gt;</td>
         <td><span class="parametername">action</span></td>
         <td><p>The builder of the message to edit.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">suppressEmbeds</span></td>
+        <td><p>Whether to suppress embeds on the message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordAttachment.html">DiscordAttachment</a>&gt;</td>
+        <td><span class="parametername">attachments</span></td>
+        <td><p>Attached files to keep.</p>
 </td>
       </tr>
     </tbody>
@@ -1547,13 +1611,13 @@
   
   
   <a id="DSharpPlus_Entities_DiscordMessage_ModifyAsync_" data-uid="DSharpPlus.Entities.DiscordMessage.ModifyAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordMessage_ModifyAsync_DSharpPlus_Entities_DiscordMessageBuilder_" data-uid="DSharpPlus.Entities.DiscordMessage.ModifyAsync(DSharpPlus.Entities.DiscordMessageBuilder)">ModifyAsync(DiscordMessageBuilder)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordMessage_ModifyAsync_DSharpPlus_Entities_DiscordMessageBuilder_System_Boolean_IEnumerable_DSharpPlus_Entities_DiscordAttachment__" data-uid="DSharpPlus.Entities.DiscordMessage.ModifyAsync(DSharpPlus.Entities.DiscordMessageBuilder,System.Boolean,IEnumerable{DSharpPlus.Entities.DiscordAttachment})">ModifyAsync(DiscordMessageBuilder, Boolean, IEnumerable&lt;DiscordAttachment&gt;)</h4>
   <div class="markdown level1 summary"><p>Edits the message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; ModifyAsync(DiscordMessageBuilder builder)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordMessage&gt; ModifyAsync(DiscordMessageBuilder builder, bool suppressEmbeds = false, IEnumerable&lt;DiscordAttachment&gt; attachments = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1569,6 +1633,18 @@
         <td><a class="xref" href="DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a></td>
         <td><span class="parametername">builder</span></td>
         <td><p>The builder of the message to edit.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">suppressEmbeds</span></td>
+        <td><p>Whether to suppress embeds on the message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordAttachment.html">DiscordAttachment</a>&gt;</td>
+        <td><span class="parametername">attachments</span></td>
+        <td><p>Attached files to keep.</p>
 </td>
       </tr>
     </tbody>
@@ -1800,6 +1876,87 @@
         <td><a class="xref" href="DSharpPlus.Entities.Optional-1.html">Optional</a>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordEmbed.html">DiscordEmbed</a>&gt;</td>
         <td><span class="parametername">embed</span></td>
         <td><p>New embed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client tried to modify a message not sent by them.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the member does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordMessage_ModifyAsync_" data-uid="DSharpPlus.Entities.DiscordMessage.ModifyAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMessage_ModifyAsync_DSharpPlus_Entities_Optional_System_String__DSharpPlus_Entities_Optional_IEnumerable_DSharpPlus_Entities_DiscordEmbed___" data-uid="DSharpPlus.Entities.DiscordMessage.ModifyAsync(DSharpPlus.Entities.Optional{System.String},DSharpPlus.Entities.Optional{IEnumerable{DSharpPlus.Entities.DiscordEmbed}})">ModifyAsync(Optional&lt;String&gt;, Optional&lt;IEnumerable&lt;DiscordEmbed&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Edits the message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; ModifyAsync(Optional&lt;string&gt; content, Optional&lt;IEnumerable&lt;DiscordEmbed&gt;&gt; embeds = default(Optional&lt;IEnumerable&lt;DiscordEmbed&gt;&gt;))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.Optional-1.html">Optional</a>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">content</span></td>
+        <td><p>New content.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.Optional-1.html">Optional</a>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordEmbed.html">DiscordEmbed</a>&gt;&gt;</td>
+        <td><span class="parametername">embeds</span></td>
+        <td><p>New embeds.</p>
 </td>
       </tr>
     </tbody>
@@ -2583,7 +2740,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2020 DSharpPlus Contributors
+            © 2016-2021 DSharpPlus Contributors
             
           </div>
         </div>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordDmChannel
    ">
-    <meta name="generator" content="docfx 2.57.0.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -138,6 +138,9 @@
       <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_PerUserRateLimit">DiscordChannel.PerUserRateLimit</a>
     </div>
     <div>
+      <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_QualityMode">DiscordChannel.QualityMode</a>
+    </div>
+    <div>
       <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_LastPinTimestamp">DiscordChannel.LastPinTimestamp</a>
     </div>
     <div>
@@ -151,6 +154,9 @@
     </div>
     <div>
       <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_IsNSFW">DiscordChannel.IsNSFW</a>
+    </div>
+    <div>
+      <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_RtcRegion">DiscordChannel.RtcRegion</a>
     </div>
     <div>
       <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_SendMessageAsync_System_String_">DiscordChannel.SendMessageAsync(String)</a>
@@ -180,7 +186,7 @@
       <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_ModifyAsync_Action_ChannelEditModel__">DiscordChannel.ModifyAsync(Action&lt;ChannelEditModel&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_ModifyPositionAsync_System_Int32_System_String_">DiscordChannel.ModifyPositionAsync(Int32, String)</a>
+      <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_ModifyPositionAsync_System_Int32_System_String_System_Nullable_System_Boolean__System_Nullable_System_UInt64__">DiscordChannel.ModifyPositionAsync(Int32, String, Nullable&lt;Boolean&gt;, Nullable&lt;UInt64&gt;)</a>
     </div>
     <div>
       <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_GetMessagesBeforeAsync_System_UInt64_System_Int32_">DiscordChannel.GetMessagesBeforeAsync(UInt64, Int32)</a>
@@ -213,6 +219,12 @@
       <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_AddOverwriteAsync_DSharpPlus_Entities_DiscordRole_DSharpPlus_Permissions_DSharpPlus_Permissions_System_String_">DiscordChannel.AddOverwriteAsync(DiscordRole, Permissions, Permissions, String)</a>
     </div>
     <div>
+      <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_DeleteOverwriteAsync_DSharpPlus_Entities_DiscordMember_System_String_">DiscordChannel.DeleteOverwriteAsync(DiscordMember, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_DeleteOverwriteAsync_DSharpPlus_Entities_DiscordRole_System_String_">DiscordChannel.DeleteOverwriteAsync(DiscordRole, String)</a>
+    </div>
+    <div>
       <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_TriggerTypingAsync">DiscordChannel.TriggerTypingAsync()</a>
     </div>
     <div>
@@ -232,6 +244,9 @@
     </div>
     <div>
       <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_CrosspostMessageAsync_DSharpPlus_Entities_DiscordMessage_">DiscordChannel.CrosspostMessageAsync(DiscordMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_UpdateCurrentUserVoiceStateAsync_System_Nullable_System_Boolean__System_Nullable_DateTimeOffset__">DiscordChannel.UpdateCurrentUserVoiceStateAsync(Nullable&lt;Boolean&gt;, Nullable&lt;DateTimeOffset&gt;)</a>
     </div>
     <div>
       <a class="xref" href="DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_PermissionsFor_DSharpPlus_Entities_DiscordMember_">DiscordChannel.PermissionsFor(DiscordMember)</a>
@@ -399,7 +414,7 @@
   
   <a id="DSharpPlus_Entities_DiscordDmChannel_AddDmRecipientAsync_" data-uid="DSharpPlus.Entities.DiscordDmChannel.AddDmRecipientAsync*"></a>
   <h4 id="DSharpPlus_Entities_DiscordDmChannel_AddDmRecipientAsync_System_UInt64_System_String_System_String_" data-uid="DSharpPlus.Entities.DiscordDmChannel.AddDmRecipientAsync(System.UInt64,System.String,System.String)">AddDmRecipientAsync(UInt64, String, String)</h4>
-  <div class="markdown level1 summary"><p>Only use for Group DMs! Whitelised bots only. Requires user&apos;s oauth2 access token</p>
+  <div class="markdown level1 summary"><p>Only use for Group DMs! Whitelisted bots only. Requires user&apos;s oauth2 access token</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -578,7 +593,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2020 DSharpPlus Contributors
+            © 2016-2021 DSharpPlus Contributors
             
           </div>
         </div>

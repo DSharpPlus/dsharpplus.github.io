@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ChannelExtensions
    ">
-    <meta name="generator" content="docfx 2.57.0.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -267,7 +267,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task SendPaginatedMessageAsync(this DiscordChannel channel, DiscordUser user, IEnumerable&lt;Page&gt; pages, PaginationEmojis emojis = null, PaginationBehaviour? behaviour = default(PaginationBehaviour? ), PaginationDeletion? deletion = default(PaginationDeletion? ), TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task SendPaginatedMessageAsync(this DiscordChannel channel, DiscordUser user, IEnumerable&lt;Page&gt; pages, PaginationEmojis emojis, PaginationBehaviour? behaviour = default(PaginationBehaviour? ), PaginationDeletion? deletion = default(PaginationDeletion? ), TimeSpan? timeoutoverride = default(TimeSpan? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -300,6 +300,157 @@
       <tr>
         <td><a class="xref" href="DSharpPlus.Interactivity.PaginationEmojis.html">PaginationEmojis</a></td>
         <td><span class="parametername">emojis</span></td>
+        <td><p>Pagination emojis.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">PaginationBehaviour</span>&gt;</td>
+        <td><span class="parametername">behaviour</span></td>
+        <td><p>Pagination behaviour (when hitting max and min indices).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">PaginationDeletion</span>&gt;</td>
+        <td><span class="parametername">deletion</span></td>
+        <td><p>Deletion behaviour.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
+        <td><span class="parametername">timeoutoverride</span></td>
+        <td><p>Override timeout period.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Interactivity_Extensions_ChannelExtensions_SendPaginatedMessageAsync_" data-uid="DSharpPlus.Interactivity.Extensions.ChannelExtensions.SendPaginatedMessageAsync*"></a>
+  <h4 id="DSharpPlus_Interactivity_Extensions_ChannelExtensions_SendPaginatedMessageAsync_DiscordChannel_DiscordUser_IEnumerable_DSharpPlus_Interactivity_Page__PaginationButtons_System_Nullable_PaginationBehaviour__System_Nullable_ButtonPaginationBehavior__System_Threading_CancellationToken_" data-uid="DSharpPlus.Interactivity.Extensions.ChannelExtensions.SendPaginatedMessageAsync(DiscordChannel,DiscordUser,IEnumerable{DSharpPlus.Interactivity.Page},PaginationButtons,System.Nullable{PaginationBehaviour},System.Nullable{ButtonPaginationBehavior},System.Threading.CancellationToken)">SendPaginatedMessageAsync(DiscordChannel, DiscordUser, IEnumerable&lt;Page&gt;, PaginationButtons, Nullable&lt;PaginationBehaviour&gt;, Nullable&lt;ButtonPaginationBehavior&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends a new paginated message with buttons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task SendPaginatedMessageAsync(this DiscordChannel channel, DiscordUser user, IEnumerable&lt;Page&gt; pages, PaginationButtons buttons, PaginationBehaviour? behaviour = default(PaginationBehaviour? ), ButtonPaginationBehavior? deletion = default(ButtonPaginationBehavior? ), CancellationToken token = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DiscordChannel</span></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>Target channel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DiscordUser</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>The user that&apos;ll be able to control the pages.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.Page.html">Page</a>&gt;</td>
+        <td><span class="parametername">pages</span></td>
+        <td><p>A collection of <a class="xref" href="DSharpPlus.Interactivity.Page.html">Page</a> to display.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">PaginationButtons</span></td>
+        <td><span class="parametername">buttons</span></td>
+        <td><p>Pagination buttons (leave null to default to ones on configuration).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">PaginationBehaviour</span>&gt;</td>
+        <td><span class="parametername">behaviour</span></td>
+        <td><p>Pagination behaviour.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">ButtonPaginationBehavior</span>&gt;</td>
+        <td><span class="parametername">deletion</span></td>
+        <td><p>Deletion behaviour</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">token</span></td>
+        <td><p>A custom cancellation token that can be cancelled at any point.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Interactivity_Extensions_ChannelExtensions_SendPaginatedMessageAsync_" data-uid="DSharpPlus.Interactivity.Extensions.ChannelExtensions.SendPaginatedMessageAsync*"></a>
+  <h4 id="DSharpPlus_Interactivity_Extensions_ChannelExtensions_SendPaginatedMessageAsync_DiscordChannel_DiscordUser_IEnumerable_DSharpPlus_Interactivity_Page__System_Nullable_PaginationBehaviour__System_Nullable_ButtonPaginationBehavior__System_Threading_CancellationToken_" data-uid="DSharpPlus.Interactivity.Extensions.ChannelExtensions.SendPaginatedMessageAsync(DiscordChannel,DiscordUser,IEnumerable{DSharpPlus.Interactivity.Page},System.Nullable{PaginationBehaviour},System.Nullable{ButtonPaginationBehavior},System.Threading.CancellationToken)">SendPaginatedMessageAsync(DiscordChannel, DiscordUser, IEnumerable&lt;Page&gt;, Nullable&lt;PaginationBehaviour&gt;, Nullable&lt;ButtonPaginationBehavior&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task SendPaginatedMessageAsync(this DiscordChannel channel, DiscordUser user, IEnumerable&lt;Page&gt; pages, PaginationBehaviour? behaviour = default(PaginationBehaviour? ), ButtonPaginationBehavior? deletion = default(ButtonPaginationBehavior? ), CancellationToken token = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DiscordChannel</span></td>
+        <td><span class="parametername">channel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DiscordUser</span></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Interactivity.Page.html">Page</a>&gt;</td>
+        <td><span class="parametername">pages</span></td>
         <td></td>
       </tr>
       <tr>
@@ -308,13 +459,13 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">PaginationDeletion</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">ButtonPaginationBehavior</span>&gt;</td>
         <td><span class="parametername">deletion</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
-        <td><span class="parametername">timeoutoverride</span></td>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">token</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -415,7 +566,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2020 DSharpPlus Contributors
+            © 2016-2021 DSharpPlus Contributors
             
           </div>
         </div>

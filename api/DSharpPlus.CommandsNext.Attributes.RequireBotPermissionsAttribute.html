@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class RequireBotPermissionsAttribute
    ">
-    <meta name="generator" content="docfx 2.57.0.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -100,13 +100,13 @@
   
   
   <a id="DSharpPlus_CommandsNext_Attributes_RequireBotPermissionsAttribute__ctor_" data-uid="DSharpPlus.CommandsNext.Attributes.RequireBotPermissionsAttribute.#ctor*"></a>
-  <h4 id="DSharpPlus_CommandsNext_Attributes_RequireBotPermissionsAttribute__ctor_DSharpPlus_Permissions_" data-uid="DSharpPlus.CommandsNext.Attributes.RequireBotPermissionsAttribute.#ctor(DSharpPlus.Permissions)">RequireBotPermissionsAttribute(Permissions)</h4>
+  <h4 id="DSharpPlus_CommandsNext_Attributes_RequireBotPermissionsAttribute__ctor_DSharpPlus_Permissions_System_Boolean_" data-uid="DSharpPlus.CommandsNext.Attributes.RequireBotPermissionsAttribute.#ctor(DSharpPlus.Permissions,System.Boolean)">RequireBotPermissionsAttribute(Permissions, Boolean)</h4>
   <div class="markdown level1 summary"><p>Defines that usage of this command is only possible when the bot is granted a specific permission.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RequireBotPermissionsAttribute(Permissions permissions)</code></pre>
+    <pre><code class="lang-csharp hljs">public RequireBotPermissionsAttribute(Permissions permissions, bool ignoreDms = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -124,6 +124,12 @@
         <td><p>Permissions required to execute this command.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ignoreDms</span></td>
+        <td><p>Sets this check&apos;s behaviour in DMs. True means the check will always pass in DMs, whereas false means that it will always fail.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
@@ -132,7 +138,7 @@
   
   <a id="DSharpPlus_CommandsNext_Attributes_RequireBotPermissionsAttribute_IgnoreDms_" data-uid="DSharpPlus.CommandsNext.Attributes.RequireBotPermissionsAttribute.IgnoreDms*"></a>
   <h4 id="DSharpPlus_CommandsNext_Attributes_RequireBotPermissionsAttribute_IgnoreDms" data-uid="DSharpPlus.CommandsNext.Attributes.RequireBotPermissionsAttribute.IgnoreDms">IgnoreDms</h4>
-  <div class="markdown level1 summary"><p>Gets or sets this check&apos;s behaviour in DMs. True means the check will always pass in DMs, whereas false means that it will always fail.</p>
+  <div class="markdown level1 summary"><p>Gets this check&apos;s behaviour in DMs. True means the check will always pass in DMs, whereas false means that it will always fail.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -190,7 +196,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task&lt;bool&gt; ExecuteCheckAsync(CommandContext ctx, bool help)</code></pre>
+    <pre><code class="lang-csharp hljs">public override async Task&lt;bool&gt; ExecuteCheckAsync(CommandContext ctx, bool help)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -256,7 +262,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2020 DSharpPlus Contributors
+            © 2016-2021 DSharpPlus Contributors
             
           </div>
         </div>

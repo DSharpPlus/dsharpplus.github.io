@@ -8,7 +8,7 @@
     <title>Lavalink Setup </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Lavalink Setup ">
-    <meta name="generator" content="docfx 2.57.0.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -76,17 +76,17 @@
             <article class="content wrap" id="_content" data-uid="audio_lavalink_setup">
 <h1 id="lavalink---the-newer-better-way-to-do-music">Lavalink - the newer, better way to do music</h1>
 
-<p><a href="https://github.com/Frederikam/Lavalink">Lavalink</a> is a standalone program, written in Java, using JDA. It&#39;s a 
+<p><a href="https://github.com/freyacodes/Lavalink">Lavalink</a> is a standalone program, written in Java. It&#39;s a 
 lightweight solution for playing music from sources such as YouTube or 
 Soundcloud. Unlike raw voice solutions, such as VoiceNext, Lavalink can handle 
 hundreds of concurrent streams, and supports sharding.</p>
 <h2 id="configuring-java">Configuring Java</h2>
-<p>In order to run Lavalink, you must have Java 13 or greater installed. Certain Java versions may not be functional with Lavalink, so it is best to check the <a href="https://github.com/Frederikam/Lavalink#requirements">requirements</a> before downloading.
+<p>In order to run Lavalink, you must have Java 13 or greater installed. Certain Java versions may not be functional with Lavalink, so it is best to check the <a href="https://github.com/freyacodes/Lavalink#requirements">requirements</a> before downloading.
 The latest releases can be found <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">here</a>.</p>
 <p>Make sure the location of the newest JRE&#39;s bin folder is added to your system variable&#39;s path. This will make the <code>java</code> command run from the latest runtime. You can verify that you have the right version by entering <code>java -version</code> in your command prompt or terminal.</p>
 <h2 id="downloading-lavalink">Downloading Lavalink</h2>
-<p>Next, head over to the <a href="https://github.com/Frederikam/Lavalink/releases">releases</a> tab on the Lavalink GitHub page and download the Jar file from the latest version. Alternatively, stable builds with the latest changes can be found on their <a href="https://ci.fredboat.com/viewLog.html?buildId=lastSuccessful&amp;buildTypeId=Lavalink_Build&amp;tab=artifacts&amp;guest=1">CI Server</a>.</p>
-<p>The program will not be ready to run yet, as you will need to create a configuration file first. To do so, create a new YAML file called <code>application.yml</code>, and use the <a href="https://github.com/Frederikam/Lavalink/blob/master/LavalinkServer/application.yml.example">example file</a>, or copy this text:</p>
+<p>Next, head over to the <a href="https://github.com/freyacodes/Lavalink/releases">releases</a> tab on the Lavalink GitHub page and download the Jar file from the latest version. Alternatively, stable builds with the latest changes can be found on their <a href="https://ci.fredboat.com/viewLog.html?buildId=lastSuccessful&amp;buildTypeId=Lavalink_Build&amp;tab=artifacts&amp;guest=1">CI Server</a>.</p>
+<p>The program will not be ready to run yet, as you will need to create a configuration file first. To do so, create a new YAML file called <code>application.yml</code>, and use the <a href="https://github.com/freyacodes/Lavalink/blob/master/LavalinkServer/application.yml.example">example file</a>, or copy this text:</p>
 <pre><code class="lang-yaml">server: # REST and WS server
   port: 2333
   address: 127.0.0.1
@@ -151,7 +151,7 @@ logging:
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/DSharpPlus/DSharpPlus/blob/release/4.0/docs/articles/audio/lavalink/setup.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Neuheit/DSharpPlus/blob/master/docs/articles/audio/lavalink/setup.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -170,7 +170,7 @@ logging:
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2020 DSharpPlus Contributors
+            © 2016-2021 DSharpPlus Contributors
             
           </div>
         </div>

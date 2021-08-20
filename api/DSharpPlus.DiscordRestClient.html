@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordRestClient
    ">
-    <meta name="generator" content="docfx 2.57.0.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -341,6 +341,57 @@
   </table>
   
   
+  <a id="DSharpPlus_DiscordRestClient_BatchEditApplicationCommandPermissionsAsync_" data-uid="DSharpPlus.DiscordRestClient.BatchEditApplicationCommandPermissionsAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_BatchEditApplicationCommandPermissionsAsync_System_UInt64_IEnumerable_DiscordGuildApplicationCommandPermissions__" data-uid="DSharpPlus.DiscordRestClient.BatchEditApplicationCommandPermissionsAsync(System.UInt64,IEnumerable{DiscordGuildApplicationCommandPermissions})">BatchEditApplicationCommandPermissionsAsync(UInt64, IEnumerable&lt;DiscordGuildApplicationCommandPermissions&gt;)</h4>
+  <div class="markdown level1 summary"><p>Batch edits permissions for a application command in a guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IReadOnlyList&lt;DiscordGuildApplicationCommandPermissions&gt;&gt; BatchEditApplicationCommandPermissionsAsync(ulong guildId, IEnumerable&lt;DiscordGuildApplicationCommandPermissions&gt; permissions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">guildId</span></td>
+        <td><p>The guild id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">DiscordGuildApplicationCommandPermissions</span>&gt;</td>
+        <td><span class="parametername">permissions</span></td>
+        <td><p>The list of permissions to use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<span class="xref">DiscordGuildApplicationCommandPermissions</span>&gt;&gt;</td>
+        <td><p>A list of edited permissions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_DiscordRestClient_BeginGuildPruneAsync_" data-uid="DSharpPlus.DiscordRestClient.BeginGuildPruneAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_BeginGuildPruneAsync_System_UInt64_System_Int32_System_Boolean_IEnumerable_System_UInt64__System_String_" data-uid="DSharpPlus.DiscordRestClient.BeginGuildPruneAsync(System.UInt64,System.Int32,System.Boolean,IEnumerable{System.UInt64},System.String)">BeginGuildPruneAsync(UInt64, Int32, Boolean, IEnumerable&lt;UInt64&gt;, String)</h4>
   <div class="markdown level1 summary"><p>Begins a guild prune.</p>
@@ -411,7 +462,7 @@
   
   <a id="DSharpPlus_DiscordRestClient_BulkOverwriteGlobalApplicationCommandsAsync_" data-uid="DSharpPlus.DiscordRestClient.BulkOverwriteGlobalApplicationCommandsAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_BulkOverwriteGlobalApplicationCommandsAsync_IEnumerable_DiscordApplicationCommand__" data-uid="DSharpPlus.DiscordRestClient.BulkOverwriteGlobalApplicationCommandsAsync(IEnumerable{DiscordApplicationCommand})">BulkOverwriteGlobalApplicationCommandsAsync(IEnumerable&lt;DiscordApplicationCommand&gt;)</h4>
-  <div class="markdown level1 summary"><p>Overwrites the existing global slash commands. New commands are automatically created and missing commands are automatically deleted.</p>
+  <div class="markdown level1 summary"><p>Overwrites the existing global application commands. New commands are automatically created and missing commands are automatically deleted.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -456,7 +507,7 @@
   
   <a id="DSharpPlus_DiscordRestClient_BulkOverwriteGuildApplicationCommandsAsync_" data-uid="DSharpPlus.DiscordRestClient.BulkOverwriteGuildApplicationCommandsAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_BulkOverwriteGuildApplicationCommandsAsync_System_UInt64_IEnumerable_DiscordApplicationCommand__" data-uid="DSharpPlus.DiscordRestClient.BulkOverwriteGuildApplicationCommandsAsync(System.UInt64,IEnumerable{DiscordApplicationCommand})">BulkOverwriteGuildApplicationCommandsAsync(UInt64, IEnumerable&lt;DiscordApplicationCommand&gt;)</h4>
-  <div class="markdown level1 summary"><p>Overwrites the existing slash commands in a guild. New commands are automatically created and missing commands are automatically deleted.</p>
+  <div class="markdown level1 summary"><p>Overwrites the existing application commands in a guild. New commands are automatically created and missing commands are automatically deleted.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -630,7 +681,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; CreateFollowupMessageAsync(string interactionToken, DiscordFollowupMessageBuilder builder)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordMessage&gt; CreateFollowupMessageAsync(string interactionToken, DiscordFollowupMessageBuilder builder)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -676,7 +727,7 @@
   
   <a id="DSharpPlus_DiscordRestClient_CreateGlobalApplicationCommandAsync_" data-uid="DSharpPlus.DiscordRestClient.CreateGlobalApplicationCommandAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_CreateGlobalApplicationCommandAsync_DiscordApplicationCommand_" data-uid="DSharpPlus.DiscordRestClient.CreateGlobalApplicationCommandAsync(DiscordApplicationCommand)">CreateGlobalApplicationCommandAsync(DiscordApplicationCommand)</h4>
-  <div class="markdown level1 summary"><p>Creates or overwrites a global slash command.</p>
+  <div class="markdown level1 summary"><p>Creates or overwrites a global application command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -821,7 +872,7 @@
   
   <a id="DSharpPlus_DiscordRestClient_CreateGuildApplicationCommandAsync_" data-uid="DSharpPlus.DiscordRestClient.CreateGuildApplicationCommandAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_CreateGuildApplicationCommandAsync_System_UInt64_DiscordApplicationCommand_" data-uid="DSharpPlus.DiscordRestClient.CreateGuildApplicationCommandAsync(System.UInt64,DiscordApplicationCommand)">CreateGuildApplicationCommandAsync(UInt64, DiscordApplicationCommand)</h4>
-  <div class="markdown level1 summary"><p>Creates or overwrites a guild slash command.</p>
+  <div class="markdown level1 summary"><p>Creates or overwrites a guild application command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -841,7 +892,7 @@
       <tr>
         <td><span class="xref">System.UInt64</span></td>
         <td><span class="parametername">guildId</span></td>
-        <td><p>The id of the guild to create the slash command in.</p>
+        <td><p>The id of the guild to create the application command in.</p>
 </td>
       </tr>
       <tr>
@@ -1001,13 +1052,13 @@
   
   
   <a id="DSharpPlus_DiscordRestClient_CreateGuildChannelAsync_" data-uid="DSharpPlus.DiscordRestClient.CreateGuildChannelAsync*"></a>
-  <h4 id="DSharpPlus_DiscordRestClient_CreateGuildChannelAsync_System_UInt64_System_String_DSharpPlus_ChannelType_System_Nullable_System_UInt64__Optional_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__IEnumerable_DiscordOverwriteBuilder__System_Nullable_System_Boolean__Optional_System_Nullable_System_Int32___System_String_" data-uid="DSharpPlus.DiscordRestClient.CreateGuildChannelAsync(System.UInt64,System.String,DSharpPlus.ChannelType,System.Nullable{System.UInt64},Optional{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},IEnumerable{DiscordOverwriteBuilder},System.Nullable{System.Boolean},Optional{System.Nullable{System.Int32}},System.String)">CreateGuildChannelAsync(UInt64, String, ChannelType, Nullable&lt;UInt64&gt;, Optional&lt;String&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, IEnumerable&lt;DiscordOverwriteBuilder&gt;, Nullable&lt;Boolean&gt;, Optional&lt;Nullable&lt;Int32&gt;&gt;, String)</h4>
+  <h4 id="DSharpPlus_DiscordRestClient_CreateGuildChannelAsync_System_UInt64_System_String_DSharpPlus_ChannelType_System_Nullable_System_UInt64__Optional_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__IEnumerable_DiscordOverwriteBuilder__System_Nullable_System_Boolean__Optional_System_Nullable_System_Int32___System_Nullable_DSharpPlus_VideoQualityMode__System_String_" data-uid="DSharpPlus.DiscordRestClient.CreateGuildChannelAsync(System.UInt64,System.String,DSharpPlus.ChannelType,System.Nullable{System.UInt64},Optional{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},IEnumerable{DiscordOverwriteBuilder},System.Nullable{System.Boolean},Optional{System.Nullable{System.Int32}},System.Nullable{DSharpPlus.VideoQualityMode},System.String)">CreateGuildChannelAsync(UInt64, String, ChannelType, Nullable&lt;UInt64&gt;, Optional&lt;String&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, IEnumerable&lt;DiscordOverwriteBuilder&gt;, Nullable&lt;Boolean&gt;, Optional&lt;Nullable&lt;Int32&gt;&gt;, Nullable&lt;VideoQualityMode&gt;, String)</h4>
   <div class="markdown level1 summary"><p>Creates a guild channel</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordChannel&gt; CreateGuildChannelAsync(ulong id, string name, ChannelType type, ulong? parent, Optional&lt;string&gt; topic, int? bitrate, int? userLimit, IEnumerable&lt;DiscordOverwriteBuilder&gt; overwrites, bool? nsfw, Optional&lt;int?&gt; perUserRateLimit, string reason)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordChannel&gt; CreateGuildChannelAsync(ulong id, string name, ChannelType type, ulong? parent, Optional&lt;string&gt; topic, int? bitrate, int? userLimit, IEnumerable&lt;DiscordOverwriteBuilder&gt; overwrites, bool? nsfw, Optional&lt;int?&gt; perUserRateLimit, VideoQualityMode? qualityMode, string reason)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1077,6 +1128,12 @@
         <td><span class="xref">Optional</span>&lt;<span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;&gt;</td>
         <td><span class="parametername">perUserRateLimit</span></td>
         <td><p>Slow mode timeout for users.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DSharpPlus.VideoQualityMode.html">VideoQualityMode</a>&gt;</td>
+        <td><span class="parametername">qualityMode</span></td>
+        <td><p>Voice channel video quality mode.</p>
 </td>
       </tr>
       <tr>
@@ -2116,7 +2173,7 @@
   
   <a id="DSharpPlus_DiscordRestClient_DeleteGlobalApplicationCommandAsync_" data-uid="DSharpPlus.DiscordRestClient.DeleteGlobalApplicationCommandAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_DeleteGlobalApplicationCommandAsync_System_UInt64_" data-uid="DSharpPlus.DiscordRestClient.DeleteGlobalApplicationCommandAsync(System.UInt64)">DeleteGlobalApplicationCommandAsync(UInt64)</h4>
-  <div class="markdown level1 summary"><p>Deletes a global slash command.</p>
+  <div class="markdown level1 summary"><p>Deletes a global application command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2160,7 +2217,7 @@
   
   <a id="DSharpPlus_DiscordRestClient_DeleteGuildApplicationCommandAsync_" data-uid="DSharpPlus.DiscordRestClient.DeleteGuildApplicationCommandAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_DeleteGuildApplicationCommandAsync_System_UInt64_System_UInt64_" data-uid="DSharpPlus.DiscordRestClient.DeleteGuildApplicationCommandAsync(System.UInt64,System.UInt64)">DeleteGuildApplicationCommandAsync(UInt64, UInt64)</h4>
-  <div class="markdown level1 summary"><p>Deletes a slash command in a guild.</p>
+  <div class="markdown level1 summary"><p>Deletes a application command in a guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2180,7 +2237,7 @@
       <tr>
         <td><span class="xref">System.UInt64</span></td>
         <td><span class="parametername">guildId</span></td>
-        <td><p>The id of the guild to delete the slash command in.</p>
+        <td><p>The id of the guild to delete the application command in.</p>
 </td>
       </tr>
       <tr>
@@ -2914,6 +2971,63 @@
   <div><a class="xref" href="DSharpPlus.BaseDiscordClient.html#DSharpPlus_BaseDiscordClient_Dispose">BaseDiscordClient.Dispose()</a></div>
   
   
+  <a id="DSharpPlus_DiscordRestClient_EditApplicationCommandPermissionsAsync_" data-uid="DSharpPlus.DiscordRestClient.EditApplicationCommandPermissionsAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_EditApplicationCommandPermissionsAsync_System_UInt64_System_UInt64_IEnumerable_DiscordApplicationCommandPermission__" data-uid="DSharpPlus.DiscordRestClient.EditApplicationCommandPermissionsAsync(System.UInt64,System.UInt64,IEnumerable{DiscordApplicationCommandPermission})">EditApplicationCommandPermissionsAsync(UInt64, UInt64, IEnumerable&lt;DiscordApplicationCommandPermission&gt;)</h4>
+  <div class="markdown level1 summary"><p>Edits permissions for a application command in a guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuildApplicationCommandPermissions&gt; EditApplicationCommandPermissionsAsync(ulong guildId, ulong commandId, IEnumerable&lt;DiscordApplicationCommandPermission&gt; permissions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">guildId</span></td>
+        <td><p>The guild id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">commandId</span></td>
+        <td><p>The id of the command to edit permissions for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">DiscordApplicationCommandPermission</span>&gt;</td>
+        <td><span class="parametername">permissions</span></td>
+        <td><p>The list of permissions to use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordGuildApplicationCommandPermissions</span>&gt;</td>
+        <td><p>The edited permissions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_DiscordRestClient_EditChannelPermissionsAsync_" data-uid="DSharpPlus.DiscordRestClient.EditChannelPermissionsAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_EditChannelPermissionsAsync_System_UInt64_System_UInt64_DSharpPlus_Permissions_DSharpPlus_Permissions_System_String_System_String_" data-uid="DSharpPlus.DiscordRestClient.EditChannelPermissionsAsync(System.UInt64,System.UInt64,DSharpPlus.Permissions,DSharpPlus.Permissions,System.String,System.String)">EditChannelPermissionsAsync(UInt64, UInt64, Permissions, Permissions, String, String)</h4>
   <div class="markdown level1 summary"><p>Edits channel overwrite</p>
@@ -2989,13 +3103,13 @@
   
   
   <a id="DSharpPlus_DiscordRestClient_EditFollowupMessageAsync_" data-uid="DSharpPlus.DiscordRestClient.EditFollowupMessageAsync*"></a>
-  <h4 id="DSharpPlus_DiscordRestClient_EditFollowupMessageAsync_System_String_System_UInt64_DiscordWebhookBuilder_" data-uid="DSharpPlus.DiscordRestClient.EditFollowupMessageAsync(System.String,System.UInt64,DiscordWebhookBuilder)">EditFollowupMessageAsync(String, UInt64, DiscordWebhookBuilder)</h4>
+  <h4 id="DSharpPlus_DiscordRestClient_EditFollowupMessageAsync_System_String_System_UInt64_DiscordWebhookBuilder_IEnumerable_DiscordAttachment__" data-uid="DSharpPlus.DiscordRestClient.EditFollowupMessageAsync(System.String,System.UInt64,DiscordWebhookBuilder,IEnumerable{DiscordAttachment})">EditFollowupMessageAsync(String, UInt64, DiscordWebhookBuilder, IEnumerable&lt;DiscordAttachment&gt;)</h4>
   <div class="markdown level1 summary"><p>Edits a follow up message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; EditFollowupMessageAsync(string interactionToken, ulong messageId, DiscordWebhookBuilder builder)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordMessage&gt; EditFollowupMessageAsync(string interactionToken, ulong messageId, DiscordWebhookBuilder builder, IEnumerable&lt;DiscordAttachment&gt; attachments = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3025,6 +3139,12 @@
         <td><p>The webhook builder.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">DiscordAttachment</span>&gt;</td>
+        <td><span class="parametername">attachments</span></td>
+        <td><p>Attached files to keep.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -3047,12 +3167,12 @@
   
   <a id="DSharpPlus_DiscordRestClient_EditGlobalApplicationCommandAsync_" data-uid="DSharpPlus.DiscordRestClient.EditGlobalApplicationCommandAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_EditGlobalApplicationCommandAsync_System_UInt64_Action_ApplicationCommandEditModel__" data-uid="DSharpPlus.DiscordRestClient.EditGlobalApplicationCommandAsync(System.UInt64,Action{ApplicationCommandEditModel})">EditGlobalApplicationCommandAsync(UInt64, Action&lt;ApplicationCommandEditModel&gt;)</h4>
-  <div class="markdown level1 summary"><p>Edits a global slash command.</p>
+  <div class="markdown level1 summary"><p>Edits a global application command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordApplicationCommand&gt; EditGlobalApplicationCommandAsync(ulong commandId, Action&lt;ApplicationCommandEditModel&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordApplicationCommand&gt; EditGlobalApplicationCommandAsync(ulong commandId, Action&lt;ApplicationCommandEditModel&gt; action)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3098,12 +3218,12 @@
   
   <a id="DSharpPlus_DiscordRestClient_EditGuildApplicationCommandAsync_" data-uid="DSharpPlus.DiscordRestClient.EditGuildApplicationCommandAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_EditGuildApplicationCommandAsync_System_UInt64_System_UInt64_Action_ApplicationCommandEditModel__" data-uid="DSharpPlus.DiscordRestClient.EditGuildApplicationCommandAsync(System.UInt64,System.UInt64,Action{ApplicationCommandEditModel})">EditGuildApplicationCommandAsync(UInt64, UInt64, Action&lt;ApplicationCommandEditModel&gt;)</h4>
-  <div class="markdown level1 summary"><p>Edits a slash command in a guild.</p>
+  <div class="markdown level1 summary"><p>Edits a application command in a guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordApplicationCommand&gt; EditGuildApplicationCommandAsync(ulong guildId, ulong commandId, Action&lt;ApplicationCommandEditModel&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordApplicationCommand&gt; EditGuildApplicationCommandAsync(ulong guildId, ulong commandId, Action&lt;ApplicationCommandEditModel&gt; action)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3118,7 +3238,7 @@
       <tr>
         <td><span class="xref">System.UInt64</span></td>
         <td><span class="parametername">guildId</span></td>
-        <td><p>The id of the guild the slash command is in.</p>
+        <td><p>The id of the guild the application command is in.</p>
 </td>
       </tr>
       <tr>
@@ -3154,13 +3274,13 @@
   
   
   <a id="DSharpPlus_DiscordRestClient_EditMessageAsync_" data-uid="DSharpPlus.DiscordRestClient.EditMessageAsync*"></a>
-  <h4 id="DSharpPlus_DiscordRestClient_EditMessageAsync_System_UInt64_System_UInt64_DiscordMessageBuilder_" data-uid="DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64,System.UInt64,DiscordMessageBuilder)">EditMessageAsync(UInt64, UInt64, DiscordMessageBuilder)</h4>
+  <h4 id="DSharpPlus_DiscordRestClient_EditMessageAsync_System_UInt64_System_UInt64_DiscordMessageBuilder_System_Boolean_IEnumerable_DiscordAttachment__" data-uid="DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64,System.UInt64,DiscordMessageBuilder,System.Boolean,IEnumerable{DiscordAttachment})">EditMessageAsync(UInt64, UInt64, DiscordMessageBuilder, Boolean, IEnumerable&lt;DiscordAttachment&gt;)</h4>
   <div class="markdown level1 summary"><p>Edits a message</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; EditMessageAsync(ulong channel_id, ulong message_id, DiscordMessageBuilder builder)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordMessage&gt; EditMessageAsync(ulong channel_id, ulong message_id, DiscordMessageBuilder builder, bool suppressEmbeds = false, IEnumerable&lt;DiscordAttachment&gt; attachments = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3188,6 +3308,18 @@
         <td><span class="xref">DiscordMessageBuilder</span></td>
         <td><span class="parametername">builder</span></td>
         <td><p>The builder of the message to edit.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">suppressEmbeds</span></td>
+        <td><p>Whether to suppress embeds on the message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">DiscordAttachment</span>&gt;</td>
+        <td><span class="parametername">attachments</span></td>
+        <td><p>Attached files to keep.</p>
 </td>
       </tr>
     </tbody>
@@ -3322,13 +3454,13 @@
   
   
   <a id="DSharpPlus_DiscordRestClient_EditOriginalInteractionResponseAsync_" data-uid="DSharpPlus.DiscordRestClient.EditOriginalInteractionResponseAsync*"></a>
-  <h4 id="DSharpPlus_DiscordRestClient_EditOriginalInteractionResponseAsync_System_String_DiscordWebhookBuilder_" data-uid="DSharpPlus.DiscordRestClient.EditOriginalInteractionResponseAsync(System.String,DiscordWebhookBuilder)">EditOriginalInteractionResponseAsync(String, DiscordWebhookBuilder)</h4>
+  <h4 id="DSharpPlus_DiscordRestClient_EditOriginalInteractionResponseAsync_System_String_DiscordWebhookBuilder_IEnumerable_DiscordAttachment__" data-uid="DSharpPlus.DiscordRestClient.EditOriginalInteractionResponseAsync(System.String,DiscordWebhookBuilder,IEnumerable{DiscordAttachment})">EditOriginalInteractionResponseAsync(String, DiscordWebhookBuilder, IEnumerable&lt;DiscordAttachment&gt;)</h4>
   <div class="markdown level1 summary"><p>Edits the original interaction response.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; EditOriginalInteractionResponseAsync(string interactionToken, DiscordWebhookBuilder builder)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordMessage&gt; EditOriginalInteractionResponseAsync(string interactionToken, DiscordWebhookBuilder builder, IEnumerable&lt;DiscordAttachment&gt; attachments = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3352,6 +3484,12 @@
         <td><p>The webhook builder.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">DiscordAttachment</span>&gt;</td>
+        <td><span class="parametername">attachments</span></td>
+        <td><p>Attached files to keep.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -3373,13 +3511,13 @@
   
   
   <a id="DSharpPlus_DiscordRestClient_EditWebhookMessageAsync_" data-uid="DSharpPlus.DiscordRestClient.EditWebhookMessageAsync*"></a>
-  <h4 id="DSharpPlus_DiscordRestClient_EditWebhookMessageAsync_System_UInt64_System_String_System_UInt64_DiscordWebhookBuilder_" data-uid="DSharpPlus.DiscordRestClient.EditWebhookMessageAsync(System.UInt64,System.String,System.UInt64,DiscordWebhookBuilder)">EditWebhookMessageAsync(UInt64, String, UInt64, DiscordWebhookBuilder)</h4>
+  <h4 id="DSharpPlus_DiscordRestClient_EditWebhookMessageAsync_System_UInt64_System_String_System_UInt64_DiscordWebhookBuilder_IEnumerable_DiscordAttachment__" data-uid="DSharpPlus.DiscordRestClient.EditWebhookMessageAsync(System.UInt64,System.String,System.UInt64,DiscordWebhookBuilder,IEnumerable{DiscordAttachment})">EditWebhookMessageAsync(UInt64, String, UInt64, DiscordWebhookBuilder, IEnumerable&lt;DiscordAttachment&gt;)</h4>
   <div class="markdown level1 summary"><p>Edits a previously-sent webhook message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; EditWebhookMessageAsync(ulong webhook_id, string webhook_token, ulong messageId, DiscordWebhookBuilder builder)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordMessage&gt; EditWebhookMessageAsync(ulong webhook_id, string webhook_token, ulong messageId, DiscordWebhookBuilder builder, IEnumerable&lt;DiscordAttachment&gt; attachments = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3413,6 +3551,12 @@
         <td><span class="xref">DiscordWebhookBuilder</span></td>
         <td><span class="parametername">builder</span></td>
         <td><p>The builder of the message to edit.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">DiscordAttachment</span>&gt;</td>
+        <td><span class="parametername">attachments</span></td>
+        <td><p>Attached files to keep.</p>
 </td>
       </tr>
     </tbody>
@@ -3919,7 +4063,7 @@
   
   <a id="DSharpPlus_DiscordRestClient_GetGlobalApplicationCommandAsync_" data-uid="DSharpPlus.DiscordRestClient.GetGlobalApplicationCommandAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_GetGlobalApplicationCommandAsync_System_UInt64_" data-uid="DSharpPlus.DiscordRestClient.GetGlobalApplicationCommandAsync(System.UInt64)">GetGlobalApplicationCommandAsync(UInt64)</h4>
-  <div class="markdown level1 summary"><p>Gets a global slash command by its id.</p>
+  <div class="markdown level1 summary"><p>Gets a global application command by its id.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3964,7 +4108,7 @@
   
   <a id="DSharpPlus_DiscordRestClient_GetGlobalApplicationCommandsAsync_" data-uid="DSharpPlus.DiscordRestClient.GetGlobalApplicationCommandsAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_GetGlobalApplicationCommandsAsync" data-uid="DSharpPlus.DiscordRestClient.GetGlobalApplicationCommandsAsync">GetGlobalApplicationCommandsAsync()</h4>
-  <div class="markdown level1 summary"><p>Gets all the global slash commands for this application.</p>
+  <div class="markdown level1 summary"><p>Gets all the global application commands for this application.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3982,7 +4126,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<span class="xref">DiscordApplicationCommand</span>&gt;&gt;</td>
-        <td><p>A list of global slash commands.</p>
+        <td><p>A list of global application commands.</p>
 </td>
       </tr>
     </tbody>
@@ -3991,7 +4135,7 @@
   
   <a id="DSharpPlus_DiscordRestClient_GetGuildApplicationCommandAsync_" data-uid="DSharpPlus.DiscordRestClient.GetGuildApplicationCommandAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_GetGuildApplicationCommandAsync_System_UInt64_System_UInt64_" data-uid="DSharpPlus.DiscordRestClient.GetGuildApplicationCommandAsync(System.UInt64,System.UInt64)">GetGuildApplicationCommandAsync(UInt64, UInt64)</h4>
-  <div class="markdown level1 summary"><p>Gets a slash command in a guild by its id.</p>
+  <div class="markdown level1 summary"><p>Gets a application command in a guild by its id.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -4011,7 +4155,7 @@
       <tr>
         <td><span class="xref">System.UInt64</span></td>
         <td><span class="parametername">guildId</span></td>
-        <td><p>The id of the guild the slash command is in.</p>
+        <td><p>The id of the guild the application command is in.</p>
 </td>
       </tr>
       <tr>
@@ -4040,9 +4184,60 @@
   </table>
   
   
+  <a id="DSharpPlus_DiscordRestClient_GetGuildApplicationCommandPermissionsAsync_" data-uid="DSharpPlus.DiscordRestClient.GetGuildApplicationCommandPermissionsAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_GetGuildApplicationCommandPermissionsAsync_System_UInt64_System_UInt64_" data-uid="DSharpPlus.DiscordRestClient.GetGuildApplicationCommandPermissionsAsync(System.UInt64,System.UInt64)">GetGuildApplicationCommandPermissionsAsync(UInt64, UInt64)</h4>
+  <div class="markdown level1 summary"><p>Gets permissions for a application command in a guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuildApplicationCommandPermissions&gt; GetGuildApplicationCommandPermissionsAsync(ulong guildId, ulong commandId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">guildId</span></td>
+        <td><p>The guild id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">commandId</span></td>
+        <td><p>The id of the command to get them for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordGuildApplicationCommandPermissions</span>&gt;</td>
+        <td><p>The permissions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_DiscordRestClient_GetGuildApplicationCommandsAsync_" data-uid="DSharpPlus.DiscordRestClient.GetGuildApplicationCommandsAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_GetGuildApplicationCommandsAsync_System_UInt64_" data-uid="DSharpPlus.DiscordRestClient.GetGuildApplicationCommandsAsync(System.UInt64)">GetGuildApplicationCommandsAsync(UInt64)</h4>
-  <div class="markdown level1 summary"><p>Gets all the slash commands for a guild.</p>
+  <div class="markdown level1 summary"><p>Gets all the application commands for a guild.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -4062,7 +4257,7 @@
       <tr>
         <td><span class="xref">System.UInt64</span></td>
         <td><span class="parametername">guildId</span></td>
-        <td><p>The id of the guild to get slash commands for.</p>
+        <td><p>The id of the guild to get application commands for.</p>
 </td>
       </tr>
     </tbody>
@@ -4078,7 +4273,52 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<span class="xref">DiscordApplicationCommand</span>&gt;&gt;</td>
-        <td><p>A list of slash commands in the guild.</p>
+        <td><p>A list of application commands in the guild.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordRestClient_GetGuildApplicationCommandsPermissionsAsync_" data-uid="DSharpPlus.DiscordRestClient.GetGuildApplicationCommandsPermissionsAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_GetGuildApplicationCommandsPermissionsAsync_System_UInt64_" data-uid="DSharpPlus.DiscordRestClient.GetGuildApplicationCommandsPermissionsAsync(System.UInt64)">GetGuildApplicationCommandsPermissionsAsync(UInt64)</h4>
+  <div class="markdown level1 summary"><p>Gets all application command permissions in a guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IReadOnlyList&lt;DiscordGuildApplicationCommandPermissions&gt;&gt; GetGuildApplicationCommandsPermissionsAsync(ulong guildId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">guildId</span></td>
+        <td><p>The guild id.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<span class="xref">DiscordGuildApplicationCommandPermissions</span>&gt;&gt;</td>
+        <td><p>A list of permissions.</p>
 </td>
       </tr>
     </tbody>
@@ -4135,9 +4375,60 @@
   </table>
   
   
+  <a id="DSharpPlus_DiscordRestClient_GetGuildBanAsync_" data-uid="DSharpPlus.DiscordRestClient.GetGuildBanAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_GetGuildBanAsync_System_UInt64_System_UInt64_" data-uid="DSharpPlus.DiscordRestClient.GetGuildBanAsync(System.UInt64,System.UInt64)">GetGuildBanAsync(UInt64, UInt64)</h4>
+  <div class="markdown level1 summary"><p>Gets the ban of the specified user. Requires Ban Members permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordBan&gt; GetGuildBanAsync(ulong guild_id, ulong user_id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">guild_id</span></td>
+        <td><p>The Id of the guild to get the ban from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">user_id</span></td>
+        <td><p>The Id of the user to get the ban for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordBan</span>&gt;</td>
+        <td><p>A guild ban object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_DiscordRestClient_GetGuildBansAsync_" data-uid="DSharpPlus.DiscordRestClient.GetGuildBansAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_GetGuildBansAsync_System_UInt64_" data-uid="DSharpPlus.DiscordRestClient.GetGuildBansAsync(System.UInt64)">GetGuildBansAsync(UInt64)</h4>
-  <div class="markdown level1 summary"><p>Gets guild bans</p>
+  <div class="markdown level1 summary"><p>Gets guild bans.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -4157,7 +4448,7 @@
       <tr>
         <td><span class="xref">System.UInt64</span></td>
         <td><span class="parametername">guild_id</span></td>
-        <td><p>Guild id</p>
+        <td><p>The Id of the guild to get the bans from.</p>
 </td>
       </tr>
     </tbody>
@@ -4173,7 +4464,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<span class="xref">DiscordBan</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>A collection of the guild&apos;s bans.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -4771,14 +5063,14 @@
   </table>
   
   
-  <a id="DSharpPlus_DiscordRestClient_GetInvite_" data-uid="DSharpPlus.DiscordRestClient.GetInvite*"></a>
-  <h4 id="DSharpPlus_DiscordRestClient_GetInvite_System_String_System_Nullable_System_Boolean__" data-uid="DSharpPlus.DiscordRestClient.GetInvite(System.String,System.Nullable{System.Boolean})">GetInvite(String, Nullable&lt;Boolean&gt;)</h4>
+  <a id="DSharpPlus_DiscordRestClient_GetInviteAsync_" data-uid="DSharpPlus.DiscordRestClient.GetInviteAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_GetInviteAsync_System_String_System_Nullable_System_Boolean__System_Nullable_System_Boolean__" data-uid="DSharpPlus.DiscordRestClient.GetInviteAsync(System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean})">GetInviteAsync(String, Nullable&lt;Boolean&gt;, Nullable&lt;Boolean&gt;)</h4>
   <div class="markdown level1 summary"><p>Gets an invite.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordInvite&gt; GetInvite(string invite_code, bool? withCounts = default(bool? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordInvite&gt; GetInviteAsync(string invite_code, bool? withCounts = default(bool? ), bool? withExpiration = default(bool? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -4800,6 +5092,12 @@
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">withCounts</span></td>
         <td><p>Whether to include presence and total member counts in the returned invite.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">withExpiration</span></td>
+        <td><p>Whether to include the expiration date in the returned invite.</p>
 </td>
       </tr>
     </tbody>
@@ -4866,6 +5164,50 @@
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordMessage</span>&gt;</td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_DiscordRestClient_GetOriginalInteractionResponseAsync_" data-uid="DSharpPlus.DiscordRestClient.GetOriginalInteractionResponseAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_GetOriginalInteractionResponseAsync_System_String_" data-uid="DSharpPlus.DiscordRestClient.GetOriginalInteractionResponseAsync(System.String)">GetOriginalInteractionResponseAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the original interaction response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; GetOriginalInteractionResponseAsync(string interactionToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">interactionToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">DiscordMessage</span>&gt;</td>
+        <td><p>The original message that was sent. This <strong>does not work on ephemeral messages.</strong></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -5379,7 +5721,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task InitializeCacheAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task InitializeCacheAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5543,7 +5885,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;IReadOnlyList&lt;DiscordMember&gt;&gt; ListGuildMembersAsync(ulong guild_id, int? limit, ulong? after)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;IReadOnlyList&lt;DiscordMember&gt;&gt; ListGuildMembersAsync(ulong guild_id, int? limit, ulong? after)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5599,7 +5941,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task ModifyAsync(ulong member_id, ulong guild_id, Action&lt;MemberEditModel&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task ModifyAsync(ulong member_id, ulong guild_id, Action&lt;MemberEditModel&gt; action)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5699,13 +6041,13 @@
   
   
   <a id="DSharpPlus_DiscordRestClient_ModifyChannelAsync_" data-uid="DSharpPlus.DiscordRestClient.ModifyChannelAsync*"></a>
-  <h4 id="DSharpPlus_DiscordRestClient_ModifyChannelAsync_System_UInt64_System_String_System_Nullable_System_Int32__Optional_System_String__System_Nullable_System_Boolean__Optional_System_Nullable_System_UInt64___System_Nullable_System_Int32__System_Nullable_System_Int32__Optional_System_Nullable_System_Int32___System_String_" data-uid="DSharpPlus.DiscordRestClient.ModifyChannelAsync(System.UInt64,System.String,System.Nullable{System.Int32},Optional{System.String},System.Nullable{System.Boolean},Optional{System.Nullable{System.UInt64}},System.Nullable{System.Int32},System.Nullable{System.Int32},Optional{System.Nullable{System.Int32}},System.String)">ModifyChannelAsync(UInt64, String, Nullable&lt;Int32&gt;, Optional&lt;String&gt;, Nullable&lt;Boolean&gt;, Optional&lt;Nullable&lt;UInt64&gt;&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Optional&lt;Nullable&lt;Int32&gt;&gt;, String)</h4>
+  <h4 id="DSharpPlus_DiscordRestClient_ModifyChannelAsync_System_UInt64_System_String_System_Nullable_System_Int32__Optional_System_String__System_Nullable_System_Boolean__Optional_System_Nullable_System_UInt64___System_Nullable_System_Int32__System_Nullable_System_Int32__Optional_System_Nullable_System_Int32___Optional_DiscordVoiceRegion__System_Nullable_DSharpPlus_VideoQualityMode__System_String_" data-uid="DSharpPlus.DiscordRestClient.ModifyChannelAsync(System.UInt64,System.String,System.Nullable{System.Int32},Optional{System.String},System.Nullable{System.Boolean},Optional{System.Nullable{System.UInt64}},System.Nullable{System.Int32},System.Nullable{System.Int32},Optional{System.Nullable{System.Int32}},Optional{DiscordVoiceRegion},System.Nullable{DSharpPlus.VideoQualityMode},System.String)">ModifyChannelAsync(UInt64, String, Nullable&lt;Int32&gt;, Optional&lt;String&gt;, Nullable&lt;Boolean&gt;, Optional&lt;Nullable&lt;UInt64&gt;&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Optional&lt;Nullable&lt;Int32&gt;&gt;, Optional&lt;DiscordVoiceRegion&gt;, Nullable&lt;VideoQualityMode&gt;, String)</h4>
   <div class="markdown level1 summary"><p>Modifies a channel</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task ModifyChannelAsync(ulong id, string name, int? position, Optional&lt;string&gt; topic, bool? nsfw, Optional&lt;ulong?&gt; parent, int? bitrate, int? userLimit, Optional&lt;int?&gt; perUserRateLimit, string reason)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task ModifyChannelAsync(ulong id, string name, int? position, Optional&lt;string&gt; topic, bool? nsfw, Optional&lt;ulong?&gt; parent, int? bitrate, int? userLimit, Optional&lt;int?&gt; perUserRateLimit, Optional&lt;DiscordVoiceRegion&gt; rtcRegion, VideoQualityMode? qualityMode, string reason)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5769,6 +6111,18 @@
         <td><span class="xref">Optional</span>&lt;<span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;&gt;</td>
         <td><span class="parametername">perUserRateLimit</span></td>
         <td><p>Slow mode timeout for users.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Optional</span>&lt;<span class="xref">DiscordVoiceRegion</span>&gt;</td>
+        <td><span class="parametername">rtcRegion</span></td>
+        <td><p>New region override.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DSharpPlus.VideoQualityMode.html">VideoQualityMode</a>&gt;</td>
+        <td><span class="parametername">qualityMode</span></td>
+        <td><p>New video quality mode.</p>
 </td>
       </tr>
       <tr>
@@ -5859,7 +6213,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordUser&gt; ModifyCurrentUserAsync(string username = null, Stream avatar = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordUser&gt; ModifyCurrentUserAsync(string username = null, Stream avatar = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5909,7 +6263,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordUser&gt; ModifyCurrentUserAsync(string username, string base64_avatar)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordUser&gt; ModifyCurrentUserAsync(string username, string base64_avatar)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5952,6 +6306,62 @@
   </table>
   
   
+  <a id="DSharpPlus_DiscordRestClient_ModifyEmbedSuppressionAsync_" data-uid="DSharpPlus.DiscordRestClient.ModifyEmbedSuppressionAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_ModifyEmbedSuppressionAsync_System_UInt64_System_UInt64_System_Boolean_" data-uid="DSharpPlus.DiscordRestClient.ModifyEmbedSuppressionAsync(System.UInt64,System.UInt64,System.Boolean)">ModifyEmbedSuppressionAsync(UInt64, UInt64, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Modifes the visibility of embeds in a message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ModifyEmbedSuppressionAsync(ulong channel_id, ulong message_id, bool hideEmbeds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">channel_id</span></td>
+        <td><p>Channel id</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">message_id</span></td>
+        <td><p>Message id</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">hideEmbeds</span></td>
+        <td><p>Whether to hide all embeds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_DiscordRestClient_ModifyGuildAsync_" data-uid="DSharpPlus.DiscordRestClient.ModifyGuildAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_ModifyGuildAsync_System_UInt64_Action_GuildEditModel__" data-uid="DSharpPlus.DiscordRestClient.ModifyGuildAsync(System.UInt64,Action{GuildEditModel})">ModifyGuildAsync(UInt64, Action&lt;GuildEditModel&gt;)</h4>
   <div class="markdown level1 summary"><p>Modifies a guild</p>
@@ -5959,7 +6369,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuild&gt; ModifyGuildAsync(ulong guild_id, Action&lt;GuildEditModel&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordGuild&gt; ModifyGuildAsync(ulong guild_id, Action&lt;GuildEditModel&gt; action)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -6285,7 +6695,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuildMembershipScreening&gt; ModifyGuildMembershipScreeningFormAsync(ulong guild_id, Action&lt;MembershipScreeningEditModel&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordGuildMembershipScreening&gt; ModifyGuildMembershipScreeningFormAsync(ulong guild_id, Action&lt;MembershipScreeningEditModel&gt; action)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -6541,7 +6951,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordGuildWelcomeScreen&gt; ModifyGuildWelcomeScreenAsync(ulong guildId, Action&lt;WelcomeScreenEditModel&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordGuildWelcomeScreen&gt; ModifyGuildWelcomeScreenAsync(ulong guildId, Action&lt;WelcomeScreenEditModel&gt; action)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -7093,6 +7503,63 @@
   </table>
   
   
+  <a id="DSharpPlus_DiscordRestClient_SearchMembersAsync_" data-uid="DSharpPlus.DiscordRestClient.SearchMembersAsync*"></a>
+  <h4 id="DSharpPlus_DiscordRestClient_SearchMembersAsync_System_UInt64_System_String_System_Nullable_System_Int32__" data-uid="DSharpPlus.DiscordRestClient.SearchMembersAsync(System.UInt64,System.String,System.Nullable{System.Int32})">SearchMembersAsync(UInt64, String, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Searches the given guild for members who&apos;s display name start with the specified name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IReadOnlyList&lt;DiscordMember&gt;&gt; SearchMembersAsync(ulong guild_id, string name, int? limit)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">guild_id</span></td>
+        <td><p>The Id of the guild to search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name to search for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">limit</span></td>
+        <td><p>The maximum amount of members to return. Max 1000. Defaults to 1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<span class="xref">DiscordMember</span>&gt;&gt;</td>
+        <td><p>The members found, if any.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_DiscordRestClient_SyncGuildIntegrationAsync_" data-uid="DSharpPlus.DiscordRestClient.SyncGuildIntegrationAsync*"></a>
   <h4 id="DSharpPlus_DiscordRestClient_SyncGuildIntegrationAsync_System_UInt64_System_UInt64_" data-uid="DSharpPlus.DiscordRestClient.SyncGuildIntegrationAsync(System.UInt64,System.UInt64)">SyncGuildIntegrationAsync(UInt64, UInt64)</h4>
   <div class="markdown level1 summary"><p>Syncs guild integration</p>
@@ -7289,13 +7756,13 @@
   
   
   <a id="DSharpPlus_DiscordRestClient_UpdateChannelPositionAsync_" data-uid="DSharpPlus.DiscordRestClient.UpdateChannelPositionAsync*"></a>
-  <h4 id="DSharpPlus_DiscordRestClient_UpdateChannelPositionAsync_System_UInt64_System_UInt64_System_Int32_System_String_" data-uid="DSharpPlus.DiscordRestClient.UpdateChannelPositionAsync(System.UInt64,System.UInt64,System.Int32,System.String)">UpdateChannelPositionAsync(UInt64, UInt64, Int32, String)</h4>
+  <h4 id="DSharpPlus_DiscordRestClient_UpdateChannelPositionAsync_System_UInt64_System_UInt64_System_Int32_System_String_System_Nullable_System_Boolean__System_Nullable_System_UInt64__" data-uid="DSharpPlus.DiscordRestClient.UpdateChannelPositionAsync(System.UInt64,System.UInt64,System.Int32,System.String,System.Nullable{System.Boolean},System.Nullable{System.UInt64})">UpdateChannelPositionAsync(UInt64, UInt64, Int32, String, Nullable&lt;Boolean&gt;, Nullable&lt;UInt64&gt;)</h4>
   <div class="markdown level1 summary"><p>Updates a channel&apos;s position</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task UpdateChannelPositionAsync(ulong guild_id, ulong channel_id, int position, string reason)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task UpdateChannelPositionAsync(ulong guild_id, ulong channel_id, int position, string reason, bool? lockPermissions = default(bool? ), ulong? parentId = default(ulong? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -7329,6 +7796,18 @@
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">reason</span></td>
         <td><p>Reason this position was modified</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">lockPermissions</span></td>
+        <td><p>Whether to sync channel permissions with the parent, if moving to a new category.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="parametername">parentId</span></td>
+        <td><p>The new parent id if the channel is to be moved to a new category.</p>
 </td>
       </tr>
     </tbody>
@@ -7435,7 +7914,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2020 DSharpPlus Contributors
+            © 2016-2021 DSharpPlus Contributors
             
           </div>
         </div>

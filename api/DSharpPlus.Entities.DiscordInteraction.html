@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordInteraction
    ">
-    <meta name="generator" content="docfx 2.57.0.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -292,7 +292,7 @@
   
   <a id="DSharpPlus_Entities_DiscordInteraction_Type_" data-uid="DSharpPlus.Entities.DiscordInteraction.Type*"></a>
   <h4 id="DSharpPlus_Entities_DiscordInteraction_Type" data-uid="DSharpPlus.Entities.DiscordInteraction.Type">Type</h4>
-  <div class="markdown level1 summary"><p>Gets the type of interaction invoked. </p>
+  <div class="markdown level1 summary"><p>Gets the type of interaction invoked.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -378,7 +378,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; CreateFollowupMessageAsync(DiscordFollowupMessageBuilder builder)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordMessage&gt; CreateFollowupMessageAsync(DiscordFollowupMessageBuilder builder)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -537,13 +537,13 @@
   
   
   <a id="DSharpPlus_Entities_DiscordInteraction_EditFollowupMessageAsync_" data-uid="DSharpPlus.Entities.DiscordInteraction.EditFollowupMessageAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordInteraction_EditFollowupMessageAsync_System_UInt64_DSharpPlus_Entities_DiscordWebhookBuilder_" data-uid="DSharpPlus.Entities.DiscordInteraction.EditFollowupMessageAsync(System.UInt64,DSharpPlus.Entities.DiscordWebhookBuilder)">EditFollowupMessageAsync(UInt64, DiscordWebhookBuilder)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordInteraction_EditFollowupMessageAsync_System_UInt64_DSharpPlus_Entities_DiscordWebhookBuilder_IEnumerable_DSharpPlus_Entities_DiscordAttachment__" data-uid="DSharpPlus.Entities.DiscordInteraction.EditFollowupMessageAsync(System.UInt64,DSharpPlus.Entities.DiscordWebhookBuilder,IEnumerable{DSharpPlus.Entities.DiscordAttachment})">EditFollowupMessageAsync(UInt64, DiscordWebhookBuilder, IEnumerable&lt;DiscordAttachment&gt;)</h4>
   <div class="markdown level1 summary"><p>Edits a follow up message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; EditFollowupMessageAsync(ulong messageId, DiscordWebhookBuilder builder)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordMessage&gt; EditFollowupMessageAsync(ulong messageId, DiscordWebhookBuilder builder, IEnumerable&lt;DiscordAttachment&gt; attachments = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -567,6 +567,12 @@
         <td><p>The webhook builder.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordAttachment.html">DiscordAttachment</a>&gt;</td>
+        <td><span class="parametername">attachments</span></td>
+        <td><p>Attached files to keep.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -588,13 +594,13 @@
   
   
   <a id="DSharpPlus_Entities_DiscordInteraction_EditOriginalResponseAsync_" data-uid="DSharpPlus.Entities.DiscordInteraction.EditOriginalResponseAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordInteraction_EditOriginalResponseAsync_DSharpPlus_Entities_DiscordWebhookBuilder_" data-uid="DSharpPlus.Entities.DiscordInteraction.EditOriginalResponseAsync(DSharpPlus.Entities.DiscordWebhookBuilder)">EditOriginalResponseAsync(DiscordWebhookBuilder)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordInteraction_EditOriginalResponseAsync_DSharpPlus_Entities_DiscordWebhookBuilder_IEnumerable_DSharpPlus_Entities_DiscordAttachment__" data-uid="DSharpPlus.Entities.DiscordInteraction.EditOriginalResponseAsync(DSharpPlus.Entities.DiscordWebhookBuilder,IEnumerable{DSharpPlus.Entities.DiscordAttachment})">EditOriginalResponseAsync(DiscordWebhookBuilder, IEnumerable&lt;DiscordAttachment&gt;)</h4>
   <div class="markdown level1 summary"><p>Edits the original interaction response.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; EditOriginalResponseAsync(DiscordWebhookBuilder builder)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordMessage&gt; EditOriginalResponseAsync(DiscordWebhookBuilder builder, IEnumerable&lt;DiscordAttachment&gt; attachments = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -612,6 +618,12 @@
         <td><p>The webhook builder.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordAttachment.html">DiscordAttachment</a>&gt;</td>
+        <td><span class="parametername">attachments</span></td>
+        <td><p>Attached files to keep.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -626,6 +638,77 @@
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
         <td><p>The <a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a> edited.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordInteraction_GetFollowupMessageAsync_" data-uid="DSharpPlus.Entities.DiscordInteraction.GetFollowupMessageAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordInteraction_GetFollowupMessageAsync_System_UInt64_" data-uid="DSharpPlus.Entities.DiscordInteraction.GetFollowupMessageAsync(System.UInt64)">GetFollowupMessageAsync(UInt64)</h4>
+  <div class="markdown level1 summary"><p>Gets a follow up message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; GetFollowupMessageAsync(ulong messageId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">messageId</span></td>
+        <td><p>The id of the follow up message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordInteraction_GetOriginalResponseAsync_" data-uid="DSharpPlus.Entities.DiscordInteraction.GetOriginalResponseAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordInteraction_GetOriginalResponseAsync" data-uid="DSharpPlus.Entities.DiscordInteraction.GetOriginalResponseAsync">GetOriginalResponseAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets the original interaction response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; GetOriginalResponseAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
+        <td><p>The origingal message that was sent. This <strong>does not work on ephemeral messages.</strong></p>
 </td>
       </tr>
     </tbody>
@@ -655,7 +738,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2020 DSharpPlus Contributors
+            © 2016-2021 DSharpPlus Contributors
             
           </div>
         </div>

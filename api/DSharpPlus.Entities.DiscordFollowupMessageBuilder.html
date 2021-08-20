@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordFollowupMessageBuilder
    ">
-    <meta name="generator" content="docfx 2.57.0.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -94,21 +94,34 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public sealed class DiscordFollowupMessageBuilder</code></pre>
   </div>
-  <h3 id="constructors">Constructors
+  <h3 id="properties">Properties
   </h3>
   
   
-  <a id="DSharpPlus_Entities_DiscordFollowupMessageBuilder__ctor_" data-uid="DSharpPlus.Entities.DiscordFollowupMessageBuilder.#ctor*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordFollowupMessageBuilder__ctor" data-uid="DSharpPlus.Entities.DiscordFollowupMessageBuilder.#ctor">DiscordFollowupMessageBuilder()</h4>
-  <div class="markdown level1 summary"><p>Constructs a new empty followup message builder.</p>
+  <a id="DSharpPlus_Entities_DiscordFollowupMessageBuilder_Components_" data-uid="DSharpPlus.Entities.DiscordFollowupMessageBuilder.Components*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordFollowupMessageBuilder_Components" data-uid="DSharpPlus.Entities.DiscordFollowupMessageBuilder.Components">Components</h4>
+  <div class="markdown level1 summary"><p>Components to send on this followup message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DiscordFollowupMessageBuilder()</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;DiscordActionRowComponent&gt; Components { get; }</code></pre>
   </div>
-  <h3 id="properties">Properties
-  </h3>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordActionRowComponent.html">DiscordActionRowComponent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordFollowupMessageBuilder_Content_" data-uid="DSharpPlus.Entities.DiscordFollowupMessageBuilder.Content*"></a>
@@ -170,7 +183,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;DiscordMessageFile&gt; Files { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;DiscordMessageFile&gt; Files { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -182,7 +195,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IReadOnlyCollection</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessageFile.html">DiscordMessageFile</a>&gt;</td>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessageFile.html">DiscordMessageFile</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -248,7 +261,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IMention&gt; Mentions { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;IMention&gt; Mentions { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -260,13 +273,147 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.IMention.html">IMention</a>&gt;</td>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.IMention.html">IMention</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordFollowupMessageBuilder_AddComponents_" data-uid="DSharpPlus.Entities.DiscordFollowupMessageBuilder.AddComponents*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordFollowupMessageBuilder_AddComponents_DSharpPlus_Entities_DiscordComponent___" data-uid="DSharpPlus.Entities.DiscordFollowupMessageBuilder.AddComponents(DSharpPlus.Entities.DiscordComponent[])">AddComponents(DiscordComponent[])</h4>
+  <div class="markdown level1 summary"><p>Appends a collection of components to the message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordFollowupMessageBuilder AddComponents(params DiscordComponent[] components)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordComponent.html">DiscordComponent</a>[]</td>
+        <td><span class="parametername">components</span></td>
+        <td><p>The collection of components to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordFollowupMessageBuilder.html">DiscordFollowupMessageBuilder</a></td>
+        <td><p>The builder to chain calls with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordFollowupMessageBuilder_AddComponents_" data-uid="DSharpPlus.Entities.DiscordFollowupMessageBuilder.AddComponents*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordFollowupMessageBuilder_AddComponents_IEnumerable_DSharpPlus_Entities_DiscordActionRowComponent__" data-uid="DSharpPlus.Entities.DiscordFollowupMessageBuilder.AddComponents(IEnumerable{DSharpPlus.Entities.DiscordActionRowComponent})">AddComponents(IEnumerable&lt;DiscordActionRowComponent&gt;)</h4>
+  <div class="markdown level1 summary"><p>Appends several rows of components to the message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordFollowupMessageBuilder AddComponents(IEnumerable&lt;DiscordActionRowComponent&gt; components)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordActionRowComponent.html">DiscordActionRowComponent</a>&gt;</td>
+        <td><span class="parametername">components</span></td>
+        <td><p>The rows of components to add, holding up to five each.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordFollowupMessageBuilder.html">DiscordFollowupMessageBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordFollowupMessageBuilder_AddComponents_" data-uid="DSharpPlus.Entities.DiscordFollowupMessageBuilder.AddComponents*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordFollowupMessageBuilder_AddComponents_IEnumerable_DSharpPlus_Entities_DiscordComponent__" data-uid="DSharpPlus.Entities.DiscordFollowupMessageBuilder.AddComponents(IEnumerable{DSharpPlus.Entities.DiscordComponent})">AddComponents(IEnumerable&lt;DiscordComponent&gt;)</h4>
+  <div class="markdown level1 summary"><p>Appends a collection of components to the message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordFollowupMessageBuilder AddComponents(IEnumerable&lt;DiscordComponent&gt; components)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordComponent.html">DiscordComponent</a>&gt;</td>
+        <td><span class="parametername">components</span></td>
+        <td><p>The collection of components to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordFollowupMessageBuilder.html">DiscordFollowupMessageBuilder</a></td>
+        <td><p>The builder to chain calls with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordFollowupMessageBuilder_AddEmbed_" data-uid="DSharpPlus.Entities.DiscordFollowupMessageBuilder.AddEmbed*"></a>
@@ -307,7 +454,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordFollowupMessageBuilder.html">DiscordFollowupMessageBuilder</a></td>
-        <td></td>
+        <td><p>The builder to chain calls with.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -351,7 +499,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordFollowupMessageBuilder.html">DiscordFollowupMessageBuilder</a></td>
-        <td></td>
+        <td><p>The builder to chain calls with.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -401,7 +550,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordFollowupMessageBuilder.html">DiscordFollowupMessageBuilder</a></td>
-        <td></td>
+        <td><p>The builder to chain calls with.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -457,7 +607,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordFollowupMessageBuilder.html">DiscordFollowupMessageBuilder</a></td>
-        <td></td>
+        <td><p>The builder to chain calls with.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -507,7 +658,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordFollowupMessageBuilder.html">DiscordFollowupMessageBuilder</a></td>
-        <td></td>
+        <td><p>The builder to chain calls with.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -551,7 +703,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordFollowupMessageBuilder.html">DiscordFollowupMessageBuilder</a></td>
-        <td></td>
+        <td><p>The builder to chain calls with.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -595,7 +748,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordFollowupMessageBuilder.html">DiscordFollowupMessageBuilder</a></td>
-        <td></td>
+        <td><p>The builder to chain calls with.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -639,7 +793,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordFollowupMessageBuilder.html">DiscordFollowupMessageBuilder</a></td>
-        <td></td>
+        <td><p>The builder to chain calls with.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -653,6 +808,17 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordFollowupMessageBuilder_ClearComponents_" data-uid="DSharpPlus.Entities.DiscordFollowupMessageBuilder.ClearComponents*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordFollowupMessageBuilder_ClearComponents" data-uid="DSharpPlus.Entities.DiscordFollowupMessageBuilder.ClearComponents">ClearComponents()</h4>
+  <div class="markdown level1 summary"><p>Clears all message components on this builder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearComponents()</code></pre>
   </div>
   
   
@@ -694,7 +860,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordFollowupMessageBuilder.html">DiscordFollowupMessageBuilder</a></td>
-        <td></td>
+        <td><p>The builder to chain calls with.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -738,7 +905,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordFollowupMessageBuilder.html">DiscordFollowupMessageBuilder</a></td>
-        <td></td>
+        <td><p>The builder to chain calls with.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -767,7 +935,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2020 DSharpPlus Contributors
+            © 2016-2021 DSharpPlus Contributors
             
           </div>
         </div>

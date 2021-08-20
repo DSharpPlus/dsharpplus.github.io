@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ExtensionMethods
    ">
-    <meta name="generator" content="docfx 2.57.0.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -150,7 +150,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;IReadOnlyDictionary&lt;int, CommandsNextExtension&gt;&gt; GetCommandsNextAsync(this DiscordShardedClient client)</code></pre>
+    <pre><code class="lang-csharp hljs">public static async Task&lt;IReadOnlyDictionary&lt;int, CommandsNextExtension&gt;&gt; GetCommandsNextAsync(this DiscordShardedClient client)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -182,6 +182,387 @@
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="DSharpPlus.CommandsNext.CommandsNextExtension.html">CommandsNextExtension</a>&gt;&gt;</td>
         <td><p>A dictionary of the modules, indexed by shard id.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_CommandsNext_ExtensionMethods_RegisterCommands_" data-uid="DSharpPlus.CommandsNext.ExtensionMethods.RegisterCommands*"></a>
+  <h4 id="DSharpPlus_CommandsNext_ExtensionMethods_RegisterCommands_IReadOnlyDictionary_System_Int32_DSharpPlus_CommandsNext_CommandsNextExtension__Assembly_" data-uid="DSharpPlus.CommandsNext.ExtensionMethods.RegisterCommands(IReadOnlyDictionary{System.Int32,DSharpPlus.CommandsNext.CommandsNextExtension},Assembly)">RegisterCommands(IReadOnlyDictionary&lt;Int32, CommandsNextExtension&gt;, Assembly)</h4>
+  <div class="markdown level1 summary"><p>Registers all commands from a given assembly. The command classes need to be public to be considered for registration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterCommands(this IReadOnlyDictionary&lt;int, CommandsNextExtension&gt; extensions, Assembly assembly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="DSharpPlus.CommandsNext.CommandsNextExtension.html">CommandsNextExtension</a>&gt;</td>
+        <td><span class="parametername">extensions</span></td>
+        <td><p>Extensions to register commands on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Assembly</span></td>
+        <td><span class="parametername">assembly</span></td>
+        <td><p>Assembly to register commands from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_CommandsNext_ExtensionMethods_RegisterCommands_" data-uid="DSharpPlus.CommandsNext.ExtensionMethods.RegisterCommands*"></a>
+  <h4 id="DSharpPlus_CommandsNext_ExtensionMethods_RegisterCommands_IReadOnlyDictionary_System_Int32_DSharpPlus_CommandsNext_CommandsNextExtension__CommandBuilder___" data-uid="DSharpPlus.CommandsNext.ExtensionMethods.RegisterCommands(IReadOnlyDictionary{System.Int32,DSharpPlus.CommandsNext.CommandsNextExtension},CommandBuilder[])">RegisterCommands(IReadOnlyDictionary&lt;Int32, CommandsNextExtension&gt;, CommandBuilder[])</h4>
+  <div class="markdown level1 summary"><p>Builds and registers all supplied commands.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterCommands(this IReadOnlyDictionary&lt;int, CommandsNextExtension&gt; extensions, params CommandBuilder[] cmds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="DSharpPlus.CommandsNext.CommandsNextExtension.html">CommandsNextExtension</a>&gt;</td>
+        <td><span class="parametername">extensions</span></td>
+        <td><p>Extensions to register commands on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CommandBuilder</span>[]</td>
+        <td><span class="parametername">cmds</span></td>
+        <td><p>Commands to build and register.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_CommandsNext_ExtensionMethods_RegisterCommands_" data-uid="DSharpPlus.CommandsNext.ExtensionMethods.RegisterCommands*"></a>
+  <h4 id="DSharpPlus_CommandsNext_ExtensionMethods_RegisterCommands_IReadOnlyDictionary_System_Int32_DSharpPlus_CommandsNext_CommandsNextExtension__Type_" data-uid="DSharpPlus.CommandsNext.ExtensionMethods.RegisterCommands(IReadOnlyDictionary{System.Int32,DSharpPlus.CommandsNext.CommandsNextExtension},Type)">RegisterCommands(IReadOnlyDictionary&lt;Int32, CommandsNextExtension&gt;, Type)</h4>
+  <div class="markdown level1 summary"><p>Registers all commands from a given command class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterCommands(this IReadOnlyDictionary&lt;int, CommandsNextExtension&gt; extensions, Type t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="DSharpPlus.CommandsNext.CommandsNextExtension.html">CommandsNextExtension</a>&gt;</td>
+        <td><span class="parametername">extensions</span></td>
+        <td><p>Extensions to register commands on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Type of the class which holds commands to register.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_CommandsNext_ExtensionMethods_RegisterCommands_" data-uid="DSharpPlus.CommandsNext.ExtensionMethods.RegisterCommands*"></a>
+  <h4 id="DSharpPlus_CommandsNext_ExtensionMethods_RegisterCommands__1_IReadOnlyDictionary_System_Int32_DSharpPlus_CommandsNext_CommandsNextExtension__" data-uid="DSharpPlus.CommandsNext.ExtensionMethods.RegisterCommands``1(IReadOnlyDictionary{System.Int32,DSharpPlus.CommandsNext.CommandsNextExtension})">RegisterCommands&lt;T&gt;(IReadOnlyDictionary&lt;Int32, CommandsNextExtension&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers all commands from a given command class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterCommands&lt;T&gt;(this IReadOnlyDictionary&lt;int, CommandsNextExtension&gt; extensions)
+
+    where T : BaseCommandModule</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="DSharpPlus.CommandsNext.CommandsNextExtension.html">CommandsNextExtension</a>&gt;</td>
+        <td><span class="parametername">extensions</span></td>
+        <td><p>Extensions to register commands on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Class which holds commands to register.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_CommandsNext_ExtensionMethods_RegisterConverter_" data-uid="DSharpPlus.CommandsNext.ExtensionMethods.RegisterConverter*"></a>
+  <h4 id="DSharpPlus_CommandsNext_ExtensionMethods_RegisterConverter__1_IReadOnlyDictionary_System_Int32_DSharpPlus_CommandsNext_CommandsNextExtension__IArgumentConverter___0__" data-uid="DSharpPlus.CommandsNext.ExtensionMethods.RegisterConverter``1(IReadOnlyDictionary{System.Int32,DSharpPlus.CommandsNext.CommandsNextExtension},IArgumentConverter{``0})">RegisterConverter&lt;T&gt;(IReadOnlyDictionary&lt;Int32, CommandsNextExtension&gt;, IArgumentConverter&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers an argument converter for specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterConverter&lt;T&gt;(this IReadOnlyDictionary&lt;int, CommandsNextExtension&gt; extensions, IArgumentConverter&lt;T&gt; converter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="DSharpPlus.CommandsNext.CommandsNextExtension.html">CommandsNextExtension</a>&gt;</td>
+        <td><span class="parametername">extensions</span></td>
+        <td><p>Extensions to register the converter on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IArgumentConverter</span>&lt;T&gt;</td>
+        <td><span class="parametername">converter</span></td>
+        <td><p>Converter to register.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type for which to register the converter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_CommandsNext_ExtensionMethods_RegisterUserFriendlyTypeName_" data-uid="DSharpPlus.CommandsNext.ExtensionMethods.RegisterUserFriendlyTypeName*"></a>
+  <h4 id="DSharpPlus_CommandsNext_ExtensionMethods_RegisterUserFriendlyTypeName__1_IReadOnlyDictionary_System_Int32_DSharpPlus_CommandsNext_CommandsNextExtension__System_String_" data-uid="DSharpPlus.CommandsNext.ExtensionMethods.RegisterUserFriendlyTypeName``1(IReadOnlyDictionary{System.Int32,DSharpPlus.CommandsNext.CommandsNextExtension},System.String)">RegisterUserFriendlyTypeName&lt;T&gt;(IReadOnlyDictionary&lt;Int32, CommandsNextExtension&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>Registers a user-friendly type name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterUserFriendlyTypeName&lt;T&gt;(this IReadOnlyDictionary&lt;int, CommandsNextExtension&gt; extensions, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="DSharpPlus.CommandsNext.CommandsNextExtension.html">CommandsNextExtension</a>&gt;</td>
+        <td><span class="parametername">extensions</span></td>
+        <td><p>Extensions to register the name on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Name to register.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type to register the name for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_CommandsNext_ExtensionMethods_SetHelpFormatter_" data-uid="DSharpPlus.CommandsNext.ExtensionMethods.SetHelpFormatter*"></a>
+  <h4 id="DSharpPlus_CommandsNext_ExtensionMethods_SetHelpFormatter__1_IReadOnlyDictionary_System_Int32_DSharpPlus_CommandsNext_CommandsNextExtension__" data-uid="DSharpPlus.CommandsNext.ExtensionMethods.SetHelpFormatter``1(IReadOnlyDictionary{System.Int32,DSharpPlus.CommandsNext.CommandsNextExtension})">SetHelpFormatter&lt;T&gt;(IReadOnlyDictionary&lt;Int32, CommandsNextExtension&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets the help formatter to use with the default help command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetHelpFormatter&lt;T&gt;(this IReadOnlyDictionary&lt;int, CommandsNextExtension&gt; extensions)
+
+    where T : BaseHelpFormatter</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="DSharpPlus.CommandsNext.CommandsNextExtension.html">CommandsNextExtension</a>&gt;</td>
+        <td><span class="parametername">extensions</span></td>
+        <td><p>Extensions to set the help formatter on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the formatter to use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_CommandsNext_ExtensionMethods_UnregisterCommands_" data-uid="DSharpPlus.CommandsNext.ExtensionMethods.UnregisterCommands*"></a>
+  <h4 id="DSharpPlus_CommandsNext_ExtensionMethods_UnregisterCommands_IReadOnlyDictionary_System_Int32_DSharpPlus_CommandsNext_CommandsNextExtension__DSharpPlus_CommandsNext_Command___" data-uid="DSharpPlus.CommandsNext.ExtensionMethods.UnregisterCommands(IReadOnlyDictionary{System.Int32,DSharpPlus.CommandsNext.CommandsNextExtension},DSharpPlus.CommandsNext.Command[])">UnregisterCommands(IReadOnlyDictionary&lt;Int32, CommandsNextExtension&gt;, Command[])</h4>
+  <div class="markdown level1 summary"><p>Unregisters specified commands from CommandsNext.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnregisterCommands(this IReadOnlyDictionary&lt;int, CommandsNextExtension&gt; extensions, params Command[] cmds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="DSharpPlus.CommandsNext.CommandsNextExtension.html">CommandsNextExtension</a>&gt;</td>
+        <td><span class="parametername">extensions</span></td>
+        <td><p>Extensions to unregister commands on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.CommandsNext.Command.html">Command</a>[]</td>
+        <td><span class="parametername">cmds</span></td>
+        <td><p>Commands to unregister.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_CommandsNext_ExtensionMethods_UnregisterConverter_" data-uid="DSharpPlus.CommandsNext.ExtensionMethods.UnregisterConverter*"></a>
+  <h4 id="DSharpPlus_CommandsNext_ExtensionMethods_UnregisterConverter__1_IReadOnlyDictionary_System_Int32_DSharpPlus_CommandsNext_CommandsNextExtension__" data-uid="DSharpPlus.CommandsNext.ExtensionMethods.UnregisterConverter``1(IReadOnlyDictionary{System.Int32,DSharpPlus.CommandsNext.CommandsNextExtension})">UnregisterConverter&lt;T&gt;(IReadOnlyDictionary&lt;Int32, CommandsNextExtension&gt;)</h4>
+  <div class="markdown level1 summary"><p>Unregisters an argument converter for specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnregisterConverter&lt;T&gt;(this IReadOnlyDictionary&lt;int, CommandsNextExtension&gt; extensions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="DSharpPlus.CommandsNext.CommandsNextExtension.html">CommandsNextExtension</a>&gt;</td>
+        <td><span class="parametername">extensions</span></td>
+        <td><p>Extensions to unregister the converter on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type for which to unregister the converter.</p>
 </td>
       </tr>
     </tbody>
@@ -246,7 +627,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;IReadOnlyDictionary&lt;int, CommandsNextExtension&gt;&gt; UseCommandsNextAsync(this DiscordShardedClient client, CommandsNextConfiguration cfg)</code></pre>
+    <pre><code class="lang-csharp hljs">public static async Task&lt;IReadOnlyDictionary&lt;int, CommandsNextExtension&gt;&gt; UseCommandsNextAsync(this DiscordShardedClient client, CommandsNextConfiguration cfg)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -313,7 +694,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2020 DSharpPlus Contributors
+            © 2016-2021 DSharpPlus Contributors
             
           </div>
         </div>

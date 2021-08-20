@@ -8,7 +8,7 @@
     <title>Message Builder </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Message Builder ">
-    <meta name="generator" content="docfx 2.57.0.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -84,8 +84,8 @@ message with an embed, or a message builder.</p>
 message builder:</p>
 <h3 id="adding-a-file">Adding a File:</h3>
 <p>For sending files, you&#39;ll have to use the MessageBuilder to construct your message, see example below:</p>
-<pre><code class="lang-cs"> using (var fs = new FileStream(&quot;ADumbFile.txt&quot;, FileMode.Open, FileAccess.Read))
- {
+<pre><code class="lang-cs">using (var fs = new FileStream(&quot;ADumbFile.txt&quot;, FileMode.Open, FileAccess.Read))
+{
     var msg = await new DiscordMessageBuilder()
         .WithContent(&quot;Here is a really dumb file that I am testing with.&quot;)
         .WithFiles(new Dictionary&lt;string, Stream&gt;() { { &quot;ADumbFile1.txt&quot;, fs } })
@@ -121,7 +121,7 @@ message builder:</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/DSharpPlus/DSharpPlus/blob/release/4.0/docs/articles/beyond_basics/messagebuilder.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Neuheit/DSharpPlus/blob/master/docs/articles/beyond_basics/messagebuilder.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -140,7 +140,7 @@ message builder:</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2020 DSharpPlus Contributors
+            © 2016-2021 DSharpPlus Contributors
             
           </div>
         </div>

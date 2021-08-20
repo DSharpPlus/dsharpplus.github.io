@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordMessageBuilder
    ">
-    <meta name="generator" content="docfx 2.57.0.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -98,6 +98,32 @@
   </h3>
   
   
+  <a id="DSharpPlus_Entities_DiscordMessageBuilder_Components_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.Components*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMessageBuilder_Components" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.Components">Components</h4>
+  <div class="markdown level1 summary"><p>Gets the components that will be attached to the message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;DiscordActionRowComponent&gt; Components { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordActionRowComponent.html">DiscordActionRowComponent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Entities_DiscordMessageBuilder_Content_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.Content*"></a>
   <h4 id="DSharpPlus_Entities_DiscordMessageBuilder_Content" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.Content">Content</h4>
   <div class="markdown level1 summary"><p>Gets or Sets the Message to be sent.</p>
@@ -126,7 +152,7 @@
   
   <a id="DSharpPlus_Entities_DiscordMessageBuilder_Embed_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.Embed*"></a>
   <h4 id="DSharpPlus_Entities_DiscordMessageBuilder_Embed" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.Embed">Embed</h4>
-  <div class="markdown level1 summary"><p>Gets or Sets the Embed to be sent.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the embed for the builder. This will always set the builder to have one embed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -144,6 +170,32 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordEmbed.html">DiscordEmbed</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordMessageBuilder_Embeds_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.Embeds*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMessageBuilder_Embeds" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.Embeds">Embeds</h4>
+  <div class="markdown level1 summary"><p>Gets the Embeds to be sent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;DiscordEmbed&gt; Embeds { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordEmbed.html">DiscordEmbed</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -258,7 +310,7 @@
   
   <a id="DSharpPlus_Entities_DiscordMessageBuilder_Mentions_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.Mentions*"></a>
   <h4 id="DSharpPlus_Entities_DiscordMessageBuilder_Mentions" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.Mentions">Mentions</h4>
-  <div class="markdown level1 summary"><p>Gets the Allowed Mentions for the message to be sent. </p>
+  <div class="markdown level1 summary"><p>Gets the Allowed Mentions for the message to be sent.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -306,8 +358,257 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordMessageBuilder_Sticker_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.Sticker*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMessageBuilder_Sticker" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.Sticker">Sticker</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordMessageSticker Sticker { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordMessageSticker.html">DiscordMessageSticker</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordMessageBuilder_AddComponents_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.AddComponents*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMessageBuilder_AddComponents_DSharpPlus_Entities_DiscordComponent___" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.AddComponents(DSharpPlus.Entities.DiscordComponent[])">AddComponents(DiscordComponent[])</h4>
+  <div class="markdown level1 summary"><p>Adds a row of components to a message, up to 5 components per row, and up to 5 rows per message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordMessageBuilder AddComponents(params DiscordComponent[] components)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordComponent.html">DiscordComponent</a>[]</td>
+        <td><span class="parametername">components</span></td>
+        <td><p>The components to add to the message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a></td>
+        <td><p>The current builder to be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordMessageBuilder_AddComponents_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.AddComponents*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMessageBuilder_AddComponents_IEnumerable_DSharpPlus_Entities_DiscordActionRowComponent__" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.AddComponents(IEnumerable{DSharpPlus.Entities.DiscordActionRowComponent})">AddComponents(IEnumerable&lt;DiscordActionRowComponent&gt;)</h4>
+  <div class="markdown level1 summary"><p>Appends several rows of components to the message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordMessageBuilder AddComponents(IEnumerable&lt;DiscordActionRowComponent&gt; components)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordActionRowComponent.html">DiscordActionRowComponent</a>&gt;</td>
+        <td><span class="parametername">components</span></td>
+        <td><p>The rows of components to add, holding up to five each.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordMessageBuilder_AddComponents_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.AddComponents*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMessageBuilder_AddComponents_IEnumerable_DSharpPlus_Entities_DiscordComponent__" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.AddComponents(IEnumerable{DSharpPlus.Entities.DiscordComponent})">AddComponents(IEnumerable&lt;DiscordComponent&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds a row of components to a message, up to 5 components per row, and up to 5 rows per message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordMessageBuilder AddComponents(IEnumerable&lt;DiscordComponent&gt; components)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordComponent.html">DiscordComponent</a>&gt;</td>
+        <td><span class="parametername">components</span></td>
+        <td><p>The components to add to the message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a></td>
+        <td><p>The current builder to be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordMessageBuilder_AddEmbed_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.AddEmbed*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMessageBuilder_AddEmbed_DSharpPlus_Entities_DiscordEmbed_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.AddEmbed(DSharpPlus.Entities.DiscordEmbed)">AddEmbed(DiscordEmbed)</h4>
+  <div class="markdown level1 summary"><p>Appends an embed to the current builder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordMessageBuilder AddEmbed(DiscordEmbed embed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordEmbed.html">DiscordEmbed</a></td>
+        <td><span class="parametername">embed</span></td>
+        <td><p>The embed that should be appended.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a></td>
+        <td><p>The current builder to be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordMessageBuilder_AddEmbeds_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.AddEmbeds*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMessageBuilder_AddEmbeds_IEnumerable_DSharpPlus_Entities_DiscordEmbed__" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.AddEmbeds(IEnumerable{DSharpPlus.Entities.DiscordEmbed})">AddEmbeds(IEnumerable&lt;DiscordEmbed&gt;)</h4>
+  <div class="markdown level1 summary"><p>Appends several embeds to the current builder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordMessageBuilder AddEmbeds(IEnumerable&lt;DiscordEmbed&gt; embeds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordEmbed.html">DiscordEmbed</a>&gt;</td>
+        <td><span class="parametername">embeds</span></td>
+        <td><p>The embeds that should be appended.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a></td>
+        <td><p>The current builder to be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="DSharpPlus_Entities_DiscordMessageBuilder_Clear_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.Clear*"></a>
@@ -318,6 +619,17 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordMessageBuilder_ClearComponents_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.ClearComponents*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMessageBuilder_ClearComponents" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.ClearComponents">ClearComponents()</h4>
+  <div class="markdown level1 summary"><p>Clears all message components on this builder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearComponents()</code></pre>
   </div>
   
   
@@ -359,7 +671,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a></td>
-        <td></td>
+        <td><p>The current builder to be chained.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -403,7 +716,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
-        <td></td>
+        <td><p>The current builder to be chained.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -447,7 +761,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
-        <td></td>
+        <td><p>The current builder to be chained.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -491,7 +806,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a></td>
-        <td></td>
+        <td><p>The current builder to be chained.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -535,7 +851,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a></td>
-        <td></td>
+        <td><p>The current builder to be chained.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -579,7 +896,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a></td>
-        <td></td>
+        <td><p>The current builder to be chained.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -587,7 +905,7 @@
   
   <a id="DSharpPlus_Entities_DiscordMessageBuilder_WithEmbed_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.WithEmbed*"></a>
   <h4 id="DSharpPlus_Entities_DiscordMessageBuilder_WithEmbed_DSharpPlus_Entities_DiscordEmbed_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.WithEmbed(DSharpPlus.Entities.DiscordEmbed)">WithEmbed(DiscordEmbed)</h4>
-  <div class="markdown level1 summary"><p>Sets if the message will have an Embed.</p>
+  <div class="markdown level1 summary"><p>Sets the embed for the current builder.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -607,7 +925,7 @@
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordEmbed.html">DiscordEmbed</a></td>
         <td><span class="parametername">embed</span></td>
-        <td><p>The embed that should be sent.</p>
+        <td><p>The embed that should be set.</p>
 </td>
       </tr>
     </tbody>
@@ -623,7 +941,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a></td>
-        <td></td>
+        <td><p>The current builder to be chained.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -673,7 +992,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a></td>
-        <td></td>
+        <td><p>The current builder to be chained.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -729,7 +1049,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a></td>
-        <td></td>
+        <td><p>The current builder to be chained.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -779,7 +1100,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a></td>
-        <td></td>
+        <td><p>The current builder to be chained.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -835,7 +1157,53 @@
     <tbody>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a></td>
-        <td></td>
+        <td><p>The current builder to be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordMessageBuilder_WithSticker_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.WithSticker*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMessageBuilder_WithSticker_DSharpPlus_Entities_DiscordMessageSticker_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.WithSticker(DSharpPlus.Entities.DiscordMessageSticker)">WithSticker(DiscordMessageSticker)</h4>
+  <div class="markdown level1 summary"><p>Adds a sticker to the message. Sticker must be from current guild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordMessageBuilder WithSticker(DiscordMessageSticker sticker)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordMessageSticker.html">DiscordMessageSticker</a></td>
+        <td><span class="parametername">sticker</span></td>
+        <td><p>The sticker to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a></td>
+        <td><p>The current builder to be chained.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -864,7 +1232,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2020 DSharpPlus Contributors
+            © 2016-2021 DSharpPlus Contributors
             
           </div>
         </div>

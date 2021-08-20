@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordShardedClient
    ">
-    <meta name="generator" content="docfx 2.57.0.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -301,8 +301,9 @@
   <h4 id="DSharpPlus_DiscordShardedClient_GetShard_DiscordGuild_" data-uid="DSharpPlus.DiscordShardedClient.GetShard(DiscordGuild)">GetShard(DiscordGuild)</h4>
   <div class="markdown level1 summary"><p>Gets a shard from a guild.
 <p>
-    If automatically sharding, this will use the <a class="xref" href="DSharpPlus.Utilities.html#DSharpPlus_Utilities_GetShardId_System_UInt64_System_Int32_">GetShardId(UInt64, Int32)</a> method. 
-    Otherwise if manually sharding, it will instead iterate through each shard&apos;s guild caches.<br></p></p>
+    If automatically sharding, this will use the <a class="xref" href="DSharpPlus.Utilities.html#DSharpPlus_Utilities_GetShardId_System_UInt64_System_Int32_">GetShardId(UInt64, Int32)</a> method.
+    Otherwise if manually sharding, it will instead iterate through each shard&apos;s guild caches.
+</p></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -349,8 +350,9 @@
   <h4 id="DSharpPlus_DiscordShardedClient_GetShard_System_UInt64_" data-uid="DSharpPlus.DiscordShardedClient.GetShard(System.UInt64)">GetShard(UInt64)</h4>
   <div class="markdown level1 summary"><p>Gets a shard from a guild ID.
 <p>
-    If automatically sharding, this will use the <a class="xref" href="DSharpPlus.Utilities.html#DSharpPlus_Utilities_GetShardId_System_UInt64_System_Int32_">GetShardId(UInt64, Int32)</a> method. 
-    Otherwise if manually sharding, it will instead iterate through each shard&apos;s guild caches.<br></p></p>
+    If automatically sharding, this will use the <a class="xref" href="DSharpPlus.Utilities.html#DSharpPlus_Utilities_GetShardId_System_UInt64_System_Int32_">GetShardId(UInt64, Int32)</a> method.
+    Otherwise if manually sharding, it will instead iterate through each shard&apos;s guild caches.
+</p></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -400,7 +402,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task StartAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task StartAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -452,7 +454,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task UpdateStatusAsync(DiscordActivity activity = null, UserStatus? userStatus = default(UserStatus? ), DateTimeOffset? idleSince = default(DateTimeOffset? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task UpdateStatusAsync(DiscordActivity activity = null, UserStatus? userStatus = default(UserStatus? ), DateTimeOffset? idleSince = default(DateTimeOffset? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -505,7 +507,7 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_ApplicationCommandCreated" data-uid="DSharpPlus.DiscordShardedClient.ApplicationCommandCreated">ApplicationCommandCreated</h4>
-  <div class="markdown level1 summary"><p>Fired when a new application command is registered. </p>
+  <div class="markdown level1 summary"><p>Fired when a new application command is registered.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -530,7 +532,7 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_ApplicationCommandDeleted" data-uid="DSharpPlus.DiscordShardedClient.ApplicationCommandDeleted">ApplicationCommandDeleted</h4>
-  <div class="markdown level1 summary"><p>Fired when an application command is deleted. </p>
+  <div class="markdown level1 summary"><p>Fired when an application command is deleted.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -555,7 +557,7 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_ApplicationCommandUpdated" data-uid="DSharpPlus.DiscordShardedClient.ApplicationCommandUpdated">ApplicationCommandUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when an application command is updated. </p>
+  <div class="markdown level1 summary"><p>Fired when an application command is updated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -702,6 +704,56 @@ For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html
     <tbody>
       <tr>
         <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">ClientErrorEventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DSharpPlus_DiscordShardedClient_ComponentInteractionCreated" data-uid="DSharpPlus.DiscordShardedClient.ComponentInteractionCreated">ComponentInteractionCreated</h4>
+  <div class="markdown level1 summary"><p>Fired when a component is invoked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, ComponentInteractionCreateEventArgs&gt; ComponentInteractionCreated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">ComponentInteractionCreateEventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DSharpPlus_DiscordShardedClient_ContextMenuInteractionCreated" data-uid="DSharpPlus.DiscordShardedClient.ContextMenuInteractionCreated">ContextMenuInteractionCreated</h4>
+  <div class="markdown level1 summary"><p>Fired when a user uses a context menu.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, ContextMenuInteractionCreateEventArgs&gt; ContextMenuInteractionCreated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">ContextMenuInteractionCreateEventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -891,7 +943,7 @@ For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_GuildEmojisUpdated" data-uid="DSharpPlus.DiscordShardedClient.GuildEmojisUpdated">GuildEmojisUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when a guilds emojis get updated
+  <div class="markdown level1 summary"><p>Fired when a guild&apos;s emojis get updated
 For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildEmojis">GuildEmojis</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1122,6 +1174,32 @@ For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html
   </table>
   
   
+  <h4 id="DSharpPlus_DiscordShardedClient_GuildStickersUpdated" data-uid="DSharpPlus.DiscordShardedClient.GuildStickersUpdated">GuildStickersUpdated</h4>
+  <div class="markdown level1 summary"><p>Fired when a guild&apos;s stickers get updated
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildEmojis">GuildEmojis</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, GuildStickersUpdateEventArgs&gt; GuildStickersUpdated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">GuildStickersUpdateEventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="DSharpPlus_DiscordShardedClient_GuildUnavailable" data-uid="DSharpPlus.DiscordShardedClient.GuildUnavailable">GuildUnavailable</h4>
   <div class="markdown level1 summary"><p>Fired when a guild becomes unavailable.</p>
 </div>
@@ -1198,8 +1276,83 @@ For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html
   </table>
   
   
+  <h4 id="DSharpPlus_DiscordShardedClient_IntegrationCreated" data-uid="DSharpPlus.DiscordShardedClient.IntegrationCreated">IntegrationCreated</h4>
+  <div class="markdown level1 summary"><p>Fired when an integration is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, IntegrationCreateEventArgs&gt; IntegrationCreated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">IntegrationCreateEventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DSharpPlus_DiscordShardedClient_IntegrationDeleted" data-uid="DSharpPlus.DiscordShardedClient.IntegrationDeleted">IntegrationDeleted</h4>
+  <div class="markdown level1 summary"><p>Fired when an integration is deleted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, IntegrationDeleteEventArgs&gt; IntegrationDeleted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">IntegrationDeleteEventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DSharpPlus_DiscordShardedClient_IntegrationUpdated" data-uid="DSharpPlus.DiscordShardedClient.IntegrationUpdated">IntegrationUpdated</h4>
+  <div class="markdown level1 summary"><p>Fired when an integration is updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, IntegrationUpdateEventArgs&gt; IntegrationUpdated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">IntegrationUpdateEventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="DSharpPlus_DiscordShardedClient_InteractionCreated" data-uid="DSharpPlus.DiscordShardedClient.InteractionCreated">InteractionCreated</h4>
-  <div class="markdown level1 summary"><p>Fired when an interaction is invoked.  </p>
+  <div class="markdown level1 summary"><p>Fired when an interaction is invoked.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1813,6 +1966,31 @@ For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html
       </tr>
     </tbody>
   </table>
+  
+  
+  <h4 id="DSharpPlus_DiscordShardedClient_Zombied" data-uid="DSharpPlus.DiscordShardedClient.Zombied">Zombied</h4>
+  <div class="markdown level1 summary"><p>Fired on heartbeat attempt cancellation due to too many failed heartbeats.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, ZombiedEventArgs&gt; Zombied</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">ZombiedEventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
     <h3 id="aliases">Equivalent names</h3>
         <h4 id="GuildJoined">GuildJoined</h4>
@@ -1843,7 +2021,7 @@ For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2020 DSharpPlus Contributors
+            © 2016-2021 DSharpPlus Contributors
             
           </div>
         </div>

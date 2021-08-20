@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordChannel
    ">
-    <meta name="generator" content="docfx 2.57.0.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -116,7 +116,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Bitrate { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int? Bitrate { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -128,7 +128,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -142,7 +142,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;DiscordChannel&gt; Children { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;DiscordChannel&gt; Children { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -154,7 +154,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordChannel.html">DiscordChannel</a>&gt;</td>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordChannel.html">DiscordChannel</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -298,7 +298,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ulong LastMessageId { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ulong? LastMessageId { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -310,7 +310,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -526,6 +526,58 @@
   </table>
   
   
+  <a id="DSharpPlus_Entities_DiscordChannel_QualityMode_" data-uid="DSharpPlus.Entities.DiscordChannel.QualityMode*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_QualityMode" data-uid="DSharpPlus.Entities.DiscordChannel.QualityMode">QualityMode</h4>
+  <div class="markdown level1 summary"><p>Gets this channel&apos;s video quality mode. This is applicable to voice channels only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VideoQualityMode? QualityMode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DSharpPlus.VideoQualityMode.html">VideoQualityMode</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordChannel_RtcRegion_" data-uid="DSharpPlus.Entities.DiscordChannel.RtcRegion*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_RtcRegion" data-uid="DSharpPlus.Entities.DiscordChannel.RtcRegion">RtcRegion</h4>
+  <div class="markdown level1 summary"><p>Gets this channel&apos;s region override (if voice channel).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordVoiceRegion RtcRegion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordVoiceRegion.html">DiscordVoiceRegion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Entities_DiscordChannel_Topic_" data-uid="DSharpPlus.Entities.DiscordChannel.Topic*"></a>
   <h4 id="DSharpPlus_Entities_DiscordChannel_Topic" data-uid="DSharpPlus.Entities.DiscordChannel.Topic">Topic</h4>
   <div class="markdown level1 summary"><p>Gets the channel&apos;s topic. This is applicable to text channels only.</p>
@@ -585,7 +637,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int UserLimit { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int? UserLimit { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -597,7 +649,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -611,7 +663,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;DiscordMember&gt; Users { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual IReadOnlyList&lt;DiscordMember&gt; Users { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -623,7 +675,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMember.html">DiscordMember</a>&gt;</td>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMember.html">DiscordMember</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -825,7 +877,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordChannel&gt; CloneAsync(string reason = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordChannel&gt; CloneAsync(string reason = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1000,7 +1052,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordWebhook&gt; CreateWebhookAsync(string name, Optional&lt;Stream&gt; avatar = default(Optional&lt;Stream&gt;), string reason = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordWebhook&gt; CreateWebhookAsync(string name, Optional&lt;Stream&gt; avatar = default(Optional&lt;Stream&gt;), string reason = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1287,7 +1339,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task DeleteMessagesAsync(IEnumerable&lt;DiscordMessage&gt; messages, string reason = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task DeleteMessagesAsync(IEnumerable&lt;DiscordMessage&gt; messages, string reason = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1340,6 +1392,168 @@
       <tr>
         <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
         <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageMessages">ManageMessages</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the channel does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordChannel_DeleteOverwriteAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.DeleteOverwriteAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_DeleteOverwriteAsync_DSharpPlus_Entities_DiscordMember_System_String_" data-uid="DSharpPlus.Entities.DiscordChannel.DeleteOverwriteAsync(DSharpPlus.Entities.DiscordMember,System.String)">DeleteOverwriteAsync(DiscordMember, String)</h4>
+  <div class="markdown level1 summary"><p>Deletes a channel permission overwrite for the specified member.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteOverwriteAsync(DiscordMember member, string reason = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordMember.html">DiscordMember</a></td>
+        <td><span class="parametername">member</span></td>
+        <td><p>The member to have the permission deleted.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>Reason for audit logs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageRoles">ManageRoles</a> permission.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the channel does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordChannel_DeleteOverwriteAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.DeleteOverwriteAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_DeleteOverwriteAsync_DSharpPlus_Entities_DiscordRole_System_String_" data-uid="DSharpPlus.Entities.DiscordChannel.DeleteOverwriteAsync(DSharpPlus.Entities.DiscordRole,System.String)">DeleteOverwriteAsync(DiscordRole, String)</h4>
+  <div class="markdown level1 summary"><p>Deletes a channel permission overwrite for the specified role.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteOverwriteAsync(DiscordRole role, string reason = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordRole.html">DiscordRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>The role to have the permission deleted.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>Reason for audit logs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the client does not have the <a class="xref" href="DSharpPlus.Permissions.html#DSharpPlus_Permissions_ManageRoles">ManageRoles</a> permission.</p>
 </td>
       </tr>
       <tr>
@@ -1590,7 +1804,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; GetMessageAsync(ulong id)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordMessage&gt; GetMessageAsync(ulong id)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2161,13 +2375,13 @@
   
   
   <a id="DSharpPlus_Entities_DiscordChannel_ModifyPositionAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.ModifyPositionAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordChannel_ModifyPositionAsync_System_Int32_System_String_" data-uid="DSharpPlus.Entities.DiscordChannel.ModifyPositionAsync(System.Int32,System.String)">ModifyPositionAsync(Int32, String)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_ModifyPositionAsync_System_Int32_System_String_System_Nullable_System_Boolean__System_Nullable_System_UInt64__" data-uid="DSharpPlus.Entities.DiscordChannel.ModifyPositionAsync(System.Int32,System.String,System.Nullable{System.Boolean},System.Nullable{System.UInt64})">ModifyPositionAsync(Int32, String, Nullable&lt;Boolean&gt;, Nullable&lt;UInt64&gt;)</h4>
   <div class="markdown level1 summary"><p>Updates the channel position</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task ModifyPositionAsync(int position, string reason = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task ModifyPositionAsync(int position, string reason = null, bool? lockPermissions = default(bool? ), ulong? parentId = default(ulong? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2189,6 +2403,18 @@
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">reason</span></td>
         <td><p>Reason for audit logs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">lockPermissions</span></td>
+        <td><p>Whether to sync channel permissions with the parent, if moving to a new category.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="parametername">parentId</span></td>
+        <td><p>The new parent id if the channel is to be moved to a new category.</p>
 </td>
       </tr>
     </tbody>
@@ -2293,7 +2519,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task PlaceMemberAsync(DiscordMember member)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task PlaceMemberAsync(DiscordMember member)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2826,6 +3052,56 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordChannel_UpdateCurrentUserVoiceStateAsync_" data-uid="DSharpPlus.Entities.DiscordChannel.UpdateCurrentUserVoiceStateAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordChannel_UpdateCurrentUserVoiceStateAsync_System_Nullable_System_Boolean__System_Nullable_DateTimeOffset__" data-uid="DSharpPlus.Entities.DiscordChannel.UpdateCurrentUserVoiceStateAsync(System.Nullable{System.Boolean},System.Nullable{DateTimeOffset})">UpdateCurrentUserVoiceStateAsync(Nullable&lt;Boolean&gt;, Nullable&lt;DateTimeOffset&gt;)</h4>
+  <div class="markdown level1 summary"><p>Updates the current user&apos;s suppress state in this channel, if stage channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task UpdateCurrentUserVoiceStateAsync(bool? suppress, DateTimeOffset? requestToSpeakTimestamp = default(DateTimeOffset? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">suppress</span></td>
+        <td><p>Toggles the suppress state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTimeOffset</span>&gt;</td>
+        <td><span class="parametername">requestToSpeakTimestamp</span></td>
+        <td><p>Sets the time the user requested to speak.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="operators">Operators
   </h3>
   
@@ -2955,7 +3231,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2020 DSharpPlus Contributors
+            © 2016-2021 DSharpPlus Contributors
             
           </div>
         </div>

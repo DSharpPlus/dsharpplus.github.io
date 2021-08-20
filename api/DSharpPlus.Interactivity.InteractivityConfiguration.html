@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class InteractivityConfiguration
    ">
-    <meta name="generator" content="docfx 2.57.0.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -140,6 +140,58 @@
   </h3>
   
   
+  <a id="DSharpPlus_Interactivity_InteractivityConfiguration_AckPaginationButtons_" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.AckPaginationButtons*"></a>
+  <h4 id="DSharpPlus_Interactivity_InteractivityConfiguration_AckPaginationButtons" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.AckPaginationButtons">AckPaginationButtons</h4>
+  <div class="markdown level1 summary"><p>Whether interactivity should ACK buttons that are pushed. Setting this to <span class="xref">true</span> will also prevent subsequent event handlers from running.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AckPaginationButtons { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Interactivity_InteractivityConfiguration_ButtonBehavior_" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.ButtonBehavior*"></a>
+  <h4 id="DSharpPlus_Interactivity_InteractivityConfiguration_ButtonBehavior" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.ButtonBehavior">ButtonBehavior</h4>
+  <div class="markdown level1 summary"><p>How to handle buttons after pagination ends.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ButtonPaginationBehavior ButtonBehavior { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ButtonPaginationBehavior</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Interactivity_InteractivityConfiguration_PaginationBehaviour_" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.PaginationBehaviour*"></a>
   <h4 id="DSharpPlus_Interactivity_InteractivityConfiguration_PaginationBehaviour" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.PaginationBehaviour">PaginationBehaviour</h4>
   <div class="markdown level1 summary"><p>How to handle pagination. Defaults to WrapAround.</p>
@@ -160,6 +212,32 @@
     <tbody>
       <tr>
         <td><span class="xref">PaginationBehaviour</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Interactivity_InteractivityConfiguration_PaginationButtons_" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.PaginationButtons*"></a>
+  <h4 id="DSharpPlus_Interactivity_InteractivityConfiguration_PaginationButtons" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.PaginationButtons">PaginationButtons</h4>
+  <div class="markdown level1 summary"><p>Buttons to use for pagination.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PaginationButtons PaginationButtons { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PaginationButtons</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -244,6 +322,58 @@
   </table>
   
   
+  <a id="DSharpPlus_Interactivity_InteractivityConfiguration_ResponseBehavior_" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.ResponseBehavior*"></a>
+  <h4 id="DSharpPlus_Interactivity_InteractivityConfiguration_ResponseBehavior" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.ResponseBehavior">ResponseBehavior</h4>
+  <div class="markdown level1 summary"><p>How to handle invalid interactions. Defaults to Ignore.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InteractionResponseBehavior ResponseBehavior { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">InteractionResponseBehavior</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Interactivity_InteractivityConfiguration_ResponseMessage_" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.ResponseMessage*"></a>
+  <h4 id="DSharpPlus_Interactivity_InteractivityConfiguration_ResponseMessage" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.ResponseMessage">ResponseMessage</h4>
+  <div class="markdown level1 summary"><p>The message to send to the user when processing invalid interactions. Ignored if <a class="xref" href="DSharpPlus.Interactivity.InteractivityConfiguration.html#DSharpPlus_Interactivity_InteractivityConfiguration_ResponseBehavior">ResponseBehavior</a> is not set to <see cref="!:InteractionResponseBehavior.Respond"></see>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ResponseMessage { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Interactivity_InteractivityConfiguration_Timeout_" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.Timeout*"></a>
   <h4 id="DSharpPlus_Interactivity_InteractivityConfiguration_Timeout" data-uid="DSharpPlus.Interactivity.InteractivityConfiguration.Timeout">Timeout</h4>
   <div class="markdown level1 summary"><p>Sets the default interactivity action timeout.</p>
@@ -294,7 +424,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2020 DSharpPlus Contributors
+            © 2016-2021 DSharpPlus Contributors
             
           </div>
         </div>

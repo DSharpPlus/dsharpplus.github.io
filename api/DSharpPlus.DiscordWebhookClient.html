@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordWebhookClient
    ">
-    <meta name="generator" content="docfx 2.57.0.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -196,6 +196,32 @@
   </table>
   
   
+  <a id="DSharpPlus_DiscordWebhookClient_Logger_" data-uid="DSharpPlus.DiscordWebhookClient.Logger*"></a>
+  <h4 id="DSharpPlus_DiscordWebhookClient_Logger" data-uid="DSharpPlus.DiscordWebhookClient.Logger">Logger</h4>
+  <div class="markdown level1 summary"><p>Gets the logger for this client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILogger&lt;DiscordWebhookClient&gt; Logger { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span>&lt;<a class="xref" href="DSharpPlus.DiscordWebhookClient.html">DiscordWebhookClient</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_DiscordWebhookClient_Username_" data-uid="DSharpPlus.DiscordWebhookClient.Username*"></a>
   <h4 id="DSharpPlus_DiscordWebhookClient_Username" data-uid="DSharpPlus.DiscordWebhookClient.Username">Username</h4>
   <div class="markdown level1 summary"><p>Gets or sets the username override for registered webhooks. Note that this only takes effect when broadcasting.</p>
@@ -302,7 +328,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordWebhook&gt; AddWebhookAsync(ulong id, BaseDiscordClient client)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordWebhook&gt; AddWebhookAsync(ulong id, BaseDiscordClient client)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -353,7 +379,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordWebhook&gt; AddWebhookAsync(ulong id, string token)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordWebhook&gt; AddWebhookAsync(ulong id, string token)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -449,7 +475,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;Dictionary&lt;DiscordWebhook, DiscordMessage&gt;&gt; BroadcastMessageAsync(DiscordWebhookBuilder builder)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;Dictionary&lt;DiscordWebhook, DiscordMessage&gt;&gt; BroadcastMessageAsync(DiscordWebhookBuilder builder)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -609,7 +635,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2020 DSharpPlus Contributors
+            © 2016-2021 DSharpPlus Contributors
             
           </div>
         </div>

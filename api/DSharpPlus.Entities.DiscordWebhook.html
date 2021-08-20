@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordWebhook
    ">
-    <meta name="generator" content="docfx 2.57.0.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -212,6 +212,58 @@
   </table>
   
   
+  <a id="DSharpPlus_Entities_DiscordWebhook_SourceChannel_" data-uid="DSharpPlus.Entities.DiscordWebhook.SourceChannel*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordWebhook_SourceChannel" data-uid="DSharpPlus.Entities.DiscordWebhook.SourceChannel">SourceChannel</h4>
+  <div class="markdown level1 summary"><p>A partial channel object for the channel this channel follower webhook is following.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordChannel SourceChannel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordChannel.html">DiscordChannel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordWebhook_SourceGuild_" data-uid="DSharpPlus.Entities.DiscordWebhook.SourceGuild*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordWebhook_SourceGuild" data-uid="DSharpPlus.Entities.DiscordWebhook.SourceGuild">SourceGuild</h4>
+  <div class="markdown level1 summary"><p>A partial guild object for the guild of the channel this channel follower webhook is following.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordGuild SourceGuild { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordGuild.html">DiscordGuild</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Entities_DiscordWebhook_Token_" data-uid="DSharpPlus.Entities.DiscordWebhook.Token*"></a>
   <h4 id="DSharpPlus_Entities_DiscordWebhook_Token" data-uid="DSharpPlus.Entities.DiscordWebhook.Token">Token</h4>
   <div class="markdown level1 summary"><p>Gets the secure token of this webhook.</p>
@@ -220,6 +272,32 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Token { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordWebhook_Url_" data-uid="DSharpPlus.Entities.DiscordWebhook.Url*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordWebhook_Url" data-uid="DSharpPlus.Entities.DiscordWebhook.Url">Url</h4>
+  <div class="markdown level1 summary"><p>Gets the webhook&apos;s url. Only returned when using the webhook.incoming OAuth2 scope.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Url { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -394,13 +472,13 @@
   
   
   <a id="DSharpPlus_Entities_DiscordWebhook_EditMessageAsync_" data-uid="DSharpPlus.Entities.DiscordWebhook.EditMessageAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordWebhook_EditMessageAsync_System_UInt64_DSharpPlus_Entities_DiscordWebhookBuilder_" data-uid="DSharpPlus.Entities.DiscordWebhook.EditMessageAsync(System.UInt64,DSharpPlus.Entities.DiscordWebhookBuilder)">EditMessageAsync(UInt64, DiscordWebhookBuilder)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordWebhook_EditMessageAsync_System_UInt64_DSharpPlus_Entities_DiscordWebhookBuilder_IEnumerable_DSharpPlus_Entities_DiscordAttachment__" data-uid="DSharpPlus.Entities.DiscordWebhook.EditMessageAsync(System.UInt64,DSharpPlus.Entities.DiscordWebhookBuilder,IEnumerable{DSharpPlus.Entities.DiscordAttachment})">EditMessageAsync(UInt64, DiscordWebhookBuilder, IEnumerable&lt;DiscordAttachment&gt;)</h4>
   <div class="markdown level1 summary"><p>Edits a previously-sent webhook message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; EditMessageAsync(ulong messageId, DiscordWebhookBuilder builder)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordMessage&gt; EditMessageAsync(ulong messageId, DiscordWebhookBuilder builder, IEnumerable&lt;DiscordAttachment&gt; attachments = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -422,6 +500,12 @@
         <td><a class="xref" href="DSharpPlus.Entities.DiscordWebhookBuilder.html">DiscordWebhookBuilder</a></td>
         <td><span class="parametername">builder</span></td>
         <td><p>The builder of the message to edit.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordAttachment.html">DiscordAttachment</a>&gt;</td>
+        <td><span class="parametername">attachments</span></td>
+        <td><p>Attached files to keep.</p>
 </td>
       </tr>
     </tbody>
@@ -801,6 +885,75 @@
   <div><span class="xref">System.Object.GetHashCode()</span></div>
   
   
+  <a id="DSharpPlus_Entities_DiscordWebhook_GetMessageAsync_" data-uid="DSharpPlus.Entities.DiscordWebhook.GetMessageAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordWebhook_GetMessageAsync_System_UInt64_" data-uid="DSharpPlus.Entities.DiscordWebhook.GetMessageAsync(System.UInt64)">GetMessageAsync(UInt64)</h4>
+  <div class="markdown level1 summary"><p>Gets a previously-sent webhook message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;DiscordMessage&gt; GetMessageAsync(ulong messageId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">messageId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the webhook or message does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="DSharpPlus_Entities_DiscordWebhook_ModifyAsync_" data-uid="DSharpPlus.Entities.DiscordWebhook.ModifyAsync*"></a>
   <h4 id="DSharpPlus_Entities_DiscordWebhook_ModifyAsync_System_String_DSharpPlus_Entities_Optional_Stream__System_Nullable_System_UInt64__System_String_" data-uid="DSharpPlus.Entities.DiscordWebhook.ModifyAsync(System.String,DSharpPlus.Entities.Optional{Stream},System.Nullable{System.UInt64},System.String)">ModifyAsync(String, Optional&lt;Stream&gt;, Nullable&lt;UInt64&gt;, String)</h4>
   <div class="markdown level1 summary"><p>Modifies this webhook.</p>
@@ -1022,7 +1175,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            © 2017-2020 DSharpPlus Contributors
+            © 2016-2021 DSharpPlus Contributors
             
           </div>
         </div>

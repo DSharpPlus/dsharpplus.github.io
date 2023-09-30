@@ -22,13 +22,13 @@ jobs:
           cache: yarn
 
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --frozen-lockfile
       - name: Install DocFX
         run: dotnet tool update -g docfx
       - name: Build API Docs
         run: docfx metadata --outputFormat markdown ./src/docs
       - name: Move API docs to API docs folder
-        run: mv ./src/docs/api/*.md ./website/docs/api
+        run: mv ./src/docs/api/*.md ./docs/api
       - name: Build website
         run: yarn build
 

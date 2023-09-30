@@ -1,0 +1,55 @@
+# Method ModifyAsync
+
+Namespace: [DSharpPlus.Entities](DSharpPlus.Entities.md)  
+Assembly: DSharpPlus.dll
+
+## <a id="DSharpPlus_Entities_DiscordWebhook_ModifyAsync_System_String_DSharpPlus_Entities_Optional_System_IO_Stream__System_Nullable_System_UInt64__System_String_"></a>ModifyAsync\(string, Optional<Stream\>, ulong?, string\)
+
+Modifies this webhook.
+
+```csharp
+public Task<DiscordWebhook> ModifyAsync(string name = null, Optional<Stream> avatar = default, ulong? channelId = null, string reason = null)
+```
+
+### Parameters
+
+`name` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+New default name for this webhook.
+
+`avatar` [Optional](DSharpPlus.Entities.Optional\-1.md)<[Stream](https://learn.microsoft.com/dotnet/api/system.io.stream)\>
+
+New avatar for this webhook.
+
+`channelId` [ulong](https://learn.microsoft.com/dotnet/api/system.uint64)?
+
+The new channel id to move the webhook to.
+
+`reason` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+Reason for audit logs.
+
+### Returns
+
+[Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DiscordWebhook](DSharpPlus.Entities.DiscordWebhook.md)\>
+
+The modified webhook.
+
+### Exceptions
+
+[UnauthorizedException](DSharpPlus.Exceptions.UnauthorizedException.md)
+
+Thrown when the client does not have the <xref href="DSharpPlus.Permissions.ManageWebhooks" data-throw-if-not-resolved="false"></xref> permission.
+
+[NotFoundException](DSharpPlus.Exceptions.NotFoundException.md)
+
+Thrown when the webhook does not exist.
+
+[BadRequestException](DSharpPlus.Exceptions.BadRequestException.md)
+
+Thrown when an invalid parameter was provided.
+
+[ServerErrorException](DSharpPlus.Exceptions.ServerErrorException.md)
+
+Thrown when Discord is unable to process the request.
+

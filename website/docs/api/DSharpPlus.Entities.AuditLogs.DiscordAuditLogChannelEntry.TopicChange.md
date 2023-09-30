@@ -1,0 +1,17 @@
+# Property TopicChange
+
+Namespace: [DSharpPlus.Entities.AuditLogs](DSharpPlus.Entities.AuditLogs.md)  
+Assembly: DSharpPlus.dll
+
+## <a id="DSharpPlus_Entities_AuditLogs_DiscordAuditLogChannelEntry_TopicChange"></a>TopicChange
+
+Gets the description of channel's topic change.
+
+```csharp
+public PropertyChange<string> TopicChange { get; }
+```
+
+### Property Value
+
+[PropertyChange](DSharpPlus.Entities.AuditLogs.PropertyChange\-1.md)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+
